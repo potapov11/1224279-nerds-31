@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><img src="https://via.placeholder.com/250x200" width="159" height="65" alt="Заглушка"></a>  
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="#">Корзина</a>
+      </nav>
+    </header>
+    <!---Начало разметки контента--->
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+      <!---1ая секция--->
+      <section>
+        <h2>Фильтр поиска</h2> <!----Будет невидимым---->
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+          <fieldset>
+            <legend>Стоимость</legend>
+              <div></div> <!---DIVы под ползунки--->
+              <div></div> <!---DIVы под ползунки--->
+              <label> От
+                <input type="text" name="min-price" value="0">
+            </label>
+            <label> До
+                <input type="text" name="min-price" value="15000">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка</legend>
+              <label>
+                <p><input type="radio" name="layout" value="adaptive" checked>Адаптивная</p>
+              </label>
+              <label>
+                <p><input type="radio" name="layout" value="fixed">Фиксированная</p>
+              </label>
+              <label>
+                <p><input type="radio" name="layout" value="rubber">Резиновая</p>
+              </label>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+              <label>
+                <p><input type="checkbox" name="slider" checked> Слайдер</p>
+              </label>
+              <label>
+                <p><input type="checkbox" name="advantages"> Блок преимуществ</p>
+              </label>
+              <label>
+                <p><input type="checkbox" name="news" checked> Новости</p>
+              </label>
+              <label>
+                <p><input type="checkbox" name="Galery"> Галерея</p>
+              </label>
+              <label>
+                <p><input type="checkbox" name="Basket"> Корзина</p>
+              </label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+        <div>
+          <label>
+            <p><input type="radio" name="sort">По цене</p>
+          </label>
+          <label>
+            <p><input type="radio" name="sort">По типу</p>
+          </label>
+          <label>
+            <p><input type="radio" name="sort">По названию</p>
+          </label>
+          <span></span> <!---Под "стрелочки""--->
+          <span></span> <!---Под "стрелочки""--->
+        </div>
+      </section>
+      <!---2ая секция--->
+      <section>
+        <h2>Шаблоны купить</h2> <!----Будет невидимым---->
+        <ul>
+          <li>
+            <img src="https://via.placeholder.com/250x200" width="358" height="578" alt="">
+            <div>
+              <h3>Макет Sedona</h3> <!----Будет невидимым---->
+              <p>Sedona</p>
+              <p>Информационный сайт<br>
+              для туристов</p>
+              <button type="button">9900</button>
+            </div>
+          </li>
+          <li><img src="https://via.placeholder.com/250x200" width="358" height="578" alt=""></li>
+          <li><img src="https://via.placeholder.com/250x200" width="358" height="578" alt=""></li>
+          <li><img src="https://via.placeholder.com/250x200" width="358" height="578" alt=""></li>
+          <li><img src="https://via.placeholder.com/250x200" width="358" height="578" alt=""></li>
+          <li><img src="https://via.placeholder.com/250x200" width="358" height="578" alt=""></li>
+        </ul>
+      </section>
+      <div>
+        <ul>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ul>
+      </div>
+      <!---Footer--->
+      <footer>
+        <div>
+          <h2>Наши контакты</h2> <!---В будущем невидимый--->
+          <p><img src="https://via.placeholder.com/250x200" width="1440" height="416" alt="Заглушка"></p>
+          <div>
+            <p>NЁRDS DESIGN STUDIO</p>
+            <p>наб. Реки Карповки, <br>
+              5 лит П, Санкт-Петербург</p>
+            <a href="tel:+78005558628">+7 800 555-86-28</a><br>
+            <a href="#">Напишите нам</a>
+          </div>
+        </div>  
+        <div>
+          <h3>Давайте дружить</h3> <!---- В будущем невидимый---->
+          <div>
+            <div>
+              <!---Блок под соц. иконки--->
+            </div>
+            <div>
+              <p>Давайте дружить, это выгодно!</p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html> 
