@@ -26,3 +26,7 @@
   --button-gray: #d5d5d5;
   --little-gray: #D7DCDE;
 }
+
+.body_page {
+  font-family: "Roboto", Arial, sans-serif;
+}
