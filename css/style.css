@@ -1,0 +1,19 @@
+:root {
+  --dark-gray: #888888;
+  --gray: #c1c1c1;
+  --white: #FFFFFF;
+  --light-gray: #A6A6A6;
+  --black: #000000;
+  --dark-gray: #283136;
+  --another-gray: #E1E1E1;
+  --red: #FB565A;
+  --green: #00CA74;
+  --yellow: #EFC849;
+  --mini-gray: #EEEEEE;
+  --text-gray: #666666;
+  --catalog-gray: #4D4D4D;
+  --catalog-another-gray: #C4C4C4;
+  --pagination-gray: #DBDBDB;
+  --catalog-line-gray: #D7DCDF;
+  --border-gray: #F2F2F2;
+}
