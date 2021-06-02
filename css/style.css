@@ -28,5 +28,122 @@
 }
 
 .body_page {
+  min-width: 1440px;
   font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.services_list_img,
+.advantage_img,
+.ourclients_list_img,
+.models_img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*----INDEX----*/
+
+.nav_item,
+.advantages_list_item,
+.services_list_item,
+.aboutus_list_item,
+.aboutus_list_right_item,
+.ourclients_list_item,
+.social_list_item,
+.sort_list_item,
+.models_list_item,
+.pagination_list_item
+ {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item_link,
+.nav_link_basket {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.advantages_text {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.advantages_subtext {
+  line-height: 16px;
+  color: var(--dark-gray);
+}
+
+.button {
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.services_list_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.services_list_text {
+
+}
+
+.aboutus_title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.aboutus_subtext {
+  font-weight: 700;
+}
+
+.aboutus_text_bold {
+  font-weight: 700;
+  text-align: center;
+}
+
+.list_right_number {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.list_right_text,
+.inner_subtext {
+  line-height: 18px;
+}
+
+.inner_text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.inner_phone_link {
+  text-decoration: none;
+  color:var(--text-gray);
+}
+
+.social_text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.social_subtext {
+  line-height: 22px;
 }
