@@ -147,3 +147,52 @@
 .social_subtext {
   line-height: 22px;
 }
+
+
+/*----Catalog----*/
+ .main_page_title {
+   font-size: 55px;
+   line-height: 55px;
+ }
+
+ .legend,
+ .sort_text {
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 30px;
+ }
+
+ .sort_list_link {
+   font-size: 14px;
+   line-height: 18px;
+   opacity: .3;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+
+ .input_text {
+   font-size: 16px;
+   line-height: 20px;
+   color: var(--dark-gray);
+ }
+
+ .models_text {
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 30px;
+   text-align: center;
+ }
+
+ .models_subtext {
+   line-height: 18px;
+   color: var(--text-gray);
+   text-align: center;
+ }
+
+ .pagination_link {
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 18px;
+   text-decoration: none;
+   color: var(--black)
+ }

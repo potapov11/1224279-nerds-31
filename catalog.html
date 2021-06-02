@@ -9,8 +9,10 @@
     <link rel="icon" href="favicon/favicon-152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/favicon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body class="page_body">
+  <body class="body_page">
     <header class="header">
       <nav class="header_nav">
         <a class="nav_link_logo">
@@ -35,13 +37,13 @@
     </header>
     <!---Начало разметки контента--->
     <main class="main_page">
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="main_page_title">Магазин готовых шаблонов</h1>
       <!---1ая секция--->
       <section class="section_form">
         <h2>Фильтр поиска</h2> <!----Будет невидимым---->
         <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset class="fieldset_first">
-            <legend>Стоимость</legend>
+            <legend class="legend" >Стоимость</legend>
             <div>
               <div></div> <!---DIVы под ползунки--->
               <div></div> <!---DIVы под ползунки--->
@@ -54,7 +56,7 @@
             </label>
           </fieldset>
           <fieldset class="fieldset_second">
-            <legend>Сетка</legend>
+            <legend class="legend" >Сетка</legend>
               <label class="label_radio">
                 <input class="input_adaptive" type="radio" name="layout" value="adaptive" checked>
                 <span class="input_text" >Адаптивная</span>
@@ -69,7 +71,7 @@
               </label>
           </fieldset>
           <fieldset class="fieldset_third">
-            <legend>Особенности</legend>
+            <legend class="legend" >Особенности</legend>
               <label class="label_checkbox">
                 <input class="input_slider" type="checkbox" name="slider" checked value="slider">
                  <span class="input_text" >Слайдер</span>
@@ -93,6 +95,7 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
+        <p class="sort_text">Сортировать</p>
         <ul class="sort_list">
           <li class="sort_list_item">
             <a class="sort_list_link" href="#">По цене</a>
@@ -118,7 +121,7 @@
             <div>
               <h3 class="models_subtitle">Макет Sedona</h3> <!----Будет невидимым---->
               <p class="models_text">Sedona</p>
-              <p class="models_text">Информационный сайт<br>
+              <p class="models_subtext">Информационный сайт для туристов<br>
               для туристов</p>
               <a class="button" href="#">9990</a>
             </div>
