@@ -25,11 +25,12 @@
   --styleguide-gray: #b4b9bb;
   --button-gray: #d5d5d5;
   --little-gray: #D7DCDE;
+  --black-01: rgba(0, 0, 0, 0.1);
+  --black-03:  rgba(0, 0, 0, 0.3)
 }
 
-.body_page {
-  min-width: 1440px;
-  font-family: "Roboto", Arial, sans-serif;
+.page-body {
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -39,160 +40,182 @@
   background-color: var(--white);
 }
 
-.services_list_img,
-.advantage_img,
-.ourclients_list_img,
-.models_img {
+.services-img,
+.advantages-img,
+.our-clients-list-img,
+.models-img {
   max-width: 100%;
   height: auto;
 }
 
+.advantages-text,
+.advantages-subtext,
+.services-text,
+.about-us-text,
+.inner-text,
+.inner-subtext,
+.social-text,
+.social-subtext,
+.inner-text,
+.inner-subtext,
+.services-title,
+.about-us-title,
+.sort-text,
+.products-text,
+.products-subtext {
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*----INDEX----*/
 
-.nav_item,
-.advantages_list_item,
-.services_list_item,
-.aboutus_list_item,
-.aboutus_list_right_item,
-.ourclients_list_item,
-.social_list_item,
-.sort_list_item,
-.models_list_item,
-.pagination_list_item
- {
+.advantages-list,
+.services-list,
+.about-us-list,
+.about-us-stats,
+.our-clients-list,
+.social-list,
+.products-list,
+.pagination-list,
+.sort-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav_item_link,
-.nav_link_basket {
-  text-decoration: none;
+.nav-link,
+.nav-link-basket {
   color: var(--black);
   font-weight: 500;
+  line-height: 30px;
 }
 
-.advantages_text {
+.advantages-text {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
 }
 
-.advantages_subtext {
-  line-height: 16px;
+.advantages-subtext {
+  line-height: 24px;
   color: var(--dark-gray);
 }
 
 .button {
+  font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  padding: 17px 40px 15px;
   text-decoration: none;
   color: var(--white);
   background-color: var(--red);
 }
 
-.services_list_title {
+.services-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 
-.services_list_text {
-
-}
-
-.aboutus_title {
+.about-us-title {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
-.aboutus_subtext {
+.about-us-subtext {
   font-weight: 700;
 }
 
-.aboutus_text_bold {
+.about-us-text-bold {
   font-weight: 700;
   text-align: center;
 }
 
-.list_right_number {
+.list-right-number {
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
 }
 
-.list_right_text,
-.inner_subtext {
+.list-right-text,
+.inner-subtext {
   line-height: 18px;
 }
 
-.inner_text {
+.inner-text {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
 }
 
-.inner_phone_link {
-  text-decoration: none;
+.inner-phone-link {
   color:var(--text-gray);
+  line-height: 18px;
 }
 
-.social_text {
+.social-text {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
 }
 
-.social_subtext {
+.social-subtext {
   line-height: 22px;
 }
 
 
 /*----Catalog----*/
- .main_page_title {
+ .main-page-title {
    font-size: 55px;
    line-height: 55px;
  }
 
  .legend,
- .sort_text {
+ .sort-text {
    font-size: 18px;
    font-weight: 700;
    line-height: 30px;
  }
 
- .sort_list_link {
+ .sort-list-link {
    font-size: 14px;
    line-height: 18px;
    opacity: .3;
-   text-decoration: none;
    text-transform: uppercase;
  }
 
- .input_text {
+ .input-text {
    font-size: 16px;
    line-height: 20px;
    color: var(--dark-gray);
  }
 
- .models_text {
+ .models-text {
    font-size: 18px;
    font-weight: 700;
    line-height: 30px;
    text-align: center;
  }
 
- .models_subtext {
+ .models-subtext {
    line-height: 18px;
    color: var(--text-gray);
    text-align: center;
  }
 
- .pagination_link {
+ .pagination-link {
    font-size: 16px;
    font-weight: 500;
    line-height: 18px;
-   text-decoration: none;
    color: var(--black)
  }
