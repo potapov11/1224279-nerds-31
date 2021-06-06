@@ -43,7 +43,7 @@
 .services-img,
 .advantages-img,
 .our-clients-list-img,
-.models-img {
+.products-img {
   max-width: 100%;
   height: auto;
 }
@@ -200,14 +200,14 @@ a {
    color: var(--dark-gray);
  }
 
- .models-text {
+ .products-text {
    font-size: 18px;
    font-weight: 700;
    line-height: 30px;
    text-align: center;
  }
 
- .models-subtext {
+ .products-subtext {
    line-height: 18px;
    color: var(--text-gray);
    text-align: center;
