@@ -110,6 +110,15 @@ a {
 .header-nav,
 .nav-list {
   display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 45px;
+}
+
+.nav-link-logo {
+  margin-right: 200px;
 }
 
 /*----INDEX----*/
@@ -210,6 +219,11 @@ a {
   line-height: 22px;
 }
 
+/*header*/
+.header {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 /*----Catalog----*/
  .main-page-title {
