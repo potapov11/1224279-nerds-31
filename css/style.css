@@ -93,7 +93,7 @@ a {
 }
 
 .page-body {
-  min-height: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
@@ -103,6 +103,7 @@ a {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  outline: #00AA62 2px solid;
 }
 
 /*---Header---*/
@@ -111,6 +112,7 @@ a {
 .nav-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-item {
@@ -127,7 +129,7 @@ a {
 .nav-list,
 .services-list,
 .about-us-list,
-.about-us-stats,
+.about-us-stats-list,
 .our-clients-list,
 .social-list,
 .products-list,
@@ -157,6 +159,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -166,25 +169,86 @@ a {
   background-color: var(--red);
 }
 
+/*---- section SERVICES----*/
+
+.services {
+  margin-bottom: 100px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.services-item {
+  margin-right: 100px;
+}
+
+.services-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .services-title {
+  margin: 15px 0px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 
+.services-text {
+  margin-bottom: 16px;
+}
+
+/*section -----ABOUT US----*/
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-content {
+  /* width: 660px; */
+}
+
+.about-us-stats {
+  text-align: right;
+}
+
 .about-us-title {
+  margin-top: 73px;
+  margin-bottom: 32px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
+.about-us-text {
+  margin-bottom: 40px;
+}
+
 .about-us-subtext {
+  margin-bottom: 23px;
   font-weight: 700;
+}
+
+.about-us-stats-list {
+  display: flex;
+}
+
+.about-us-stats-item span {
+  text-align: right;
 }
 
 .about-us-text-bold {
   font-weight: 700;
   text-align: center;
+}
+
+/*-----Section Our clients-----*/
+
+.our-clients-list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
 
 .list-right-number {
@@ -218,6 +282,54 @@ a {
 .social-subtext {
   line-height: 22px;
 }
+
+/*---Section Footer----*/
+.footer-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-inner {
+  margin-bottom: 68px;
+}
+
+.social-block {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.social-list-link {
+  display: inline-block;
+  background-color: var(--another-gray);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
+
+.social-list-img {
+  margin-left: 27px;
+  margin-top: 33px;
+}
+
+.social-item:nth-child(2) .social-list-img {
+  margin-left: 33px;
+}
+
+.social-item:nth-child(3) .social-list-img {
+  margin-left: 30px;
+}
+
+.social-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 63px;
+}
+
+.social-list {
+  display: flex;
+  margin-right: 140px;
+}
+
 
 /*header*/
 .header {
