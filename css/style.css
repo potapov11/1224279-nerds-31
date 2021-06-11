@@ -67,6 +67,12 @@
   margin: 0;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 *,
 ::before,
 ::after {
@@ -78,14 +84,11 @@ a {
 }
 
 .visually-hidden {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /*Липкий футер*/
@@ -96,15 +99,12 @@ a {
 .page-body {
   height: 100%;
   display: grid;
+  grid-template-columns: 100%;
   grid-template-rows: min-content 1fr min-content;
 }
 
 .main-page {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* outline: #00AA62 2px solid; */
+  max-width: 1200px;
 }
 
 /*---Header---*/
@@ -113,7 +113,6 @@ a {
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav-item {
@@ -122,6 +121,10 @@ a {
 
 .nav-link-logo {
   margin-right: 200px;
+}
+
+.nav-link-basket {
+  margin-left: auto;
 }
 
 /*----INDEX----*/
@@ -151,14 +154,28 @@ a {
 }
 
 .advantages-text {
+  margin-bottom: 25px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
 }
 
 .advantages-subtext {
+  margin-bottom: 38px;
   line-height: 24px;
   color: var(--dark-gray);
+}
+
+.advantages-item {
+  width: 100%;
+  height: 431px;
+  background-image: url("/img/index-img/nerds-slide-1.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.advantages-item-inner {
+  width: 380px;
 }
 
 .button {
@@ -175,20 +192,13 @@ a {
 /*---- section SERVICES----*/
 
 .services {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .services-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.services-item {
-  margin-right: 100px;
-}
-
-.services-item:nth-child(3n) {
-  margin-right: 0;
+  gap: 40px;
 }
 
 .services-title {
@@ -209,12 +219,9 @@ a {
   justify-content: space-between;
 }
 
-.about-us-content {
-  /* width: 660px; */
-}
-
 .about-us-stats {
   text-align: right;
+  width: 360px;
 }
 
 .about-us-title {
@@ -260,6 +267,11 @@ a {
   line-height: 64px;
 }
 
+.our-clients-item {
+  justify-self: center;
+  align-self: center;
+}
+
 .list-right-text,
 .inner-subtext {
   line-height: 18px;
@@ -296,30 +308,25 @@ a {
   margin-bottom: 68px;
 }
 
+.map {
+  margin:0 auto;
+  width: 100%;
+  height: 100%;
+}
+
 .social-block {
   max-width: 1160px;
   margin: 0 auto;
 }
 
 .social-list-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--another-gray);
   width: 81px;
   height: 81px;
   border-radius: 50%;
-}
-
-.social-list-img {
-  margin-left: 27px;
-  margin-top: 33px;
-}
-
-.social-item:nth-child(2) .social-list-img {
-  margin-left: 33px;
-}
-
-.social-item:nth-child(3) .social-list-img {
-  margin-left: 30px;
 }
 
 .social-block {
@@ -397,6 +404,11 @@ a {
    color: var(--black)
  }
 
+.pagination-list {
+  display: flex;
+  margin-top: 72px;
+}
+
  .form-group {
   border: none;
   padding: 0;
@@ -420,12 +432,9 @@ a {
 
  .catalog-main-page {
    display: grid;
-   grid-template-columns: 260px 1fr;
-   grid-template-rows: 100px 1fr;
-   margin: 0 auto;
-   max-width: 1160px;
-   padding-left: 20px;
-   padding-right: 20px;
+   grid-template-columns: min-content 1fr;
+   grid-column-gap: 140px;
+   grid-template-rows: min-content 1fr;
  }
 
  .form {
@@ -435,20 +444,17 @@ a {
 
  .sort {
    justify-content: space-between;
-   margin-left: 140px;
-   grid-column: 2/3;
-   grid-row: 1/2;
  }
 
  .products-list {
-   display: flex;
-   flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 41px;
+  grid-row-gap: 31px;
  }
 
-.products {
-  margin-left: 140px;
-  width: 760px;
-  justify-self: end;
+.product-info {
+  display: none;
 }
 
  .sort,
@@ -469,3 +475,10 @@ a {
    margin-bottom: 30px;
  }
 
+.pagination-list-item {
+  margin-right: 11px;
+}
+
+.pagination-list-item:nth-child(3) {
+  margin-right: 0;
+}

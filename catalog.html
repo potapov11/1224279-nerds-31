@@ -8,14 +8,14 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/favicon-152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/favicon-180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="header">
       <nav class="header-nav">
-        <a class="nav-link-logo">
+        <a class="nav-link-logo" href="index.html">
           <img class="img-logo" src="img/index-img/nerds-logo.svg" width="159" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
         <ul class="nav-list">
@@ -26,7 +26,7 @@
             <a class="nav-link" href="#">Клиенты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Магазин</a>
+            <a class="nav-link">Магазин</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Контакты</a>
@@ -34,11 +34,10 @@
         </ul>
         <a class="nav-link-basket" href="#">Корзина</a>
       </nav>
+      <h1 class="main-page-title">Магазин готовых шаблонов</h1>
     </header>
     <!---Начало разметки контента--->
-    <main class="main-page catalog-main-page">
-      <!-- <h1 class="main-page-title">Магазин готовых шаблонов</h1> -->
-
+    <main class="main-page catalog-main-page container">
       <!---1ая секция--->
 
       <section class="form">
@@ -146,8 +145,8 @@
         <h2 class="visually-hidden">Шаблоны купить</h2> <!----Будет невидимым---->
         <ul class="products-list">
           <li class="card-item">
-            <img class="products-img" src="img/catalog-img/img-sedona.jpg" width="358" height="578" alt="Пример дизайна сайта Седона">
-            <div>
+            <img class="products-img" src="img/catalog-img/img-sedona-2.jpg" width="358" height="578" alt="Пример дизайна сайта Седона">
+            <div class="product-info">
               <h3 class="products-subtitle visually-hidden">Макет Sedona</h3> <!----Будет невидимым---->
               <p class="products-text">Sedona</p>
               <p class="products-subtext">Информационный сайт для туристов<br>
@@ -157,7 +156,7 @@
           </li>
           <li class="products-item">
             <img class="products-img" src="img/catalog-img/img-pink.jpg" width="358" height="578" alt="Пример дизайна сайта Pink">
-            <div>
+            <div class="product-info">
               <h3 class="products-subtitle visually-hidden">Макет Pink App</h3> <!----Будет невидимым---->
               <p class="products-text">Pink App</p>
               <p class="products-subtext">Продуктовый лендинг<br>
@@ -168,7 +167,7 @@
           </li>
           <li class="products-item">
             <img class="products-img" src="img/catalog-img/img-barbershop.jpg" width="358" height="578" alt="Пример дизайна сайта Borodinski">
-            <div>
+            <div class="product-info">
               <h3 class="products-subtitle">Макет Barbershop</h3> <!----Будет невидимым---->
               <p class="products-text">Barbershop</p>
               <p class="products-subtext">Сайт салона красоты.<br>
@@ -178,7 +177,7 @@
           </li>
           <li class="products-item">
             <img class="products-img" src="img/catalog-img/img-mishka.jpg" width="358" height="578" alt="Пример дизайна сайта Mishka">
-            <div>
+            <div class="product-info">
               <h3 class="products-subtitle visually-hidden">Макет MISHKA</h3> <!----Будет невидимым---->
               <p class="products-text">MISHKA</p>
               <p class="products-subtext">Интернет-магазин<br>
@@ -188,7 +187,7 @@
           </li>
           <li class="products-item">
             <img class="products-img" src="img/catalog-img/img-aplus.jpg" width="358" height="578" alt=" Пример дизайна сайта">
-            <div>
+            <div class="product-info">
               <h3 class="products-subtitle visually-hidden">Макет A PLUS</h3> <!----Будет невидимым---->
               <p class="products-text">A PLUS</p>
               <p class="products-subtext">Лендинг курсов повышения<br>
@@ -198,7 +197,7 @@
           </li>
           <li class="products-item">
             <img class="products-img" src="img/catalog-img/img-kvast.jpg" width="358" height="578" alt="Пример дизайна сайта Кваст">
-            <div>
+            <div class="product-info">
               <h3 class="products-subtitle visually-hidden">Макет КВАСТ</h3> <!----Будет невидимым---->
               <p class="products-text">КВАСТ</p>
               <p class="products-subtext">Промо-сайт производителя<br>
@@ -207,22 +206,22 @@
             </div>
           </li>
         </ul>
+        <ul class="pagination-list">
+          <li class="pagination-list-item">
+            <a class="pagination-link" >1</a>
+          </li>
+          <li class="pagination-list-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-list-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-list-item">
+            <a class="pagination-link" href="#">Следующая</a>
+          </li>
+        </ul>
       </section>
 
-      <ul class="pagination-list">
-        <li class="pagination-list-item">
-          <a class="pagination-link" >1</a>
-        </li>
-        <li class="pagination-list-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-list-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-list-item">
-          <a class="pagination-link" href="#">Следующая</a>
-        </li>
-      </ul>
     </main>
 
     <!---Footer--->
