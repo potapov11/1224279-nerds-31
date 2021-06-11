@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/favicon-152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/favicon-180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
@@ -35,7 +35,7 @@
         <a class="nav-link-basket" href="#">Корзина</a>
       </nav>
     </header>
-    <main class="main-page">
+    <main class="main-page container">
       <h1>Дизайн-студия из Краснодара</h1> <!---В будущем невидимый--->
 
       <!---1ая секция--->
@@ -44,10 +44,11 @@
         <h2>Наши преимущества и плюсы</h2> <!---В будущем невидимый--->
         <ul class="advantages-list">
           <li class="advantages-item">
-            <p class="advantages-text">Долго, дорого, скрупулезно.</p>
-            <p class="advantages-subtext">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="#">Узнать больше</a>
-            <img class="advantages-img" src="img/index-img/nerds-slide-1.jpg" width="760" height="431" alt="Изображение с телефонами">
+            <div class="advantages-item-inner">
+              <p class="advantages-text">Долго, дорого, скрупулезно.</p>
+              <p class="advantages-subtext">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
           </li>
           <!-- <li class="advantages-item">
             <p class="advantages-text">Любим математику как никто другой.</p>
@@ -100,7 +101,6 @@
       <!---3я секция--->
 
       <section class="about-us">
-        <h2 class="visually-hidden">Дизайн-студия из Краснодара</h2> <!---В будущем невидимый--->
         <div class="about-us-content">
           <h2 class="about-us-title">Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
           <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
@@ -168,19 +168,21 @@
       <div class="footer-wrapper">
         <div class="footer-inner">
           <h2>Наши контакты</h2> <!---В будущем невидимый--->
-          <img class="map-img" src="img/index-img/map.jpg" width="1440" height="416" alt="Карта с адресом-Санкт-Петербург, набережная Карповки">
+          <div class="map">
+            <img class="map-img" src="img/index-img/map.jpg" width="1440" height="416" alt="Карта с адресом-Санкт-Петербург, набережная Карповки">
+          </div>
           <img class="map-logo-img" src="img/index-img/map-logo-nerds.png" width="231" height="190" alt="Логотип на карте" >
 
-          <!-- <div class="footer-block-inner">
+          <div class="footer-block-inner">
             <p class="inner-text">NЁRDS DESIGN STUDIO</p>
             <p class="inner-subtext">наб. Реки Карповки, <br>
               5 лит П, Санкт-Петербург</p>
             <a class="inner-phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
             <a class="button" href="#">Напишите нам</a>
-          </div> -->
+          </div>
 
         </div>
-          <div class="social-block">
+          <div class="social-block container">
               <ul class="social-list">
                 <li class="social-item">
                   <a class="social-list-link" href="https://vk.com/">
