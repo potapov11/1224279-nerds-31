@@ -62,8 +62,15 @@
 .about-us-title,
 .sort-text,
 .products-text,
-.products-subtext {
+.products-subtext,
+.radio-list {
   margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 *,
@@ -76,17 +83,64 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*Липкий футер*/
+.page {
+  height: 100%;
+}
+
+.page-body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.main-page {
+  max-width: 1200px;
+}
+
+/*---Header---*/
+
+.header-nav,
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 45px;
+}
+
+.nav-link-logo {
+  margin-right: 200px;
+}
+
+.nav-link-basket {
+  margin-left: auto;
+}
+
 /*----INDEX----*/
 
 .advantages-list,
+.nav-list,
 .services-list,
 .about-us-list,
-.about-us-stats,
+.about-us-stats-list,
 .our-clients-list,
 .social-list,
 .products-list,
 .pagination-list,
-.sort-list {
+.sort-list,
+.radio-list,
+.checkbox-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -100,17 +154,32 @@ a {
 }
 
 .advantages-text {
+  margin-bottom: 25px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
 }
 
 .advantages-subtext {
+  margin-bottom: 38px;
   line-height: 24px;
   color: var(--dark-gray);
 }
 
+.advantages-item {
+  width: 100%;
+  height: 431px;
+  background-image: url("/img/index-img/nerds-slide-1.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.advantages-item-inner {
+  width: 380px;
+}
+
 .button {
+  display: inline-block;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -120,20 +189,64 @@ a {
   background-color: var(--red);
 }
 
+/*---- section SERVICES----*/
+
+.services {
+  padding-bottom: 100px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
 .services-title {
+  margin: 15px 0px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 
+.services-text {
+  margin-bottom: 16px;
+}
+
+/*section -----ABOUT US----*/
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-stats {
+  text-align: right;
+  width: 360px;
+}
+
 .about-us-title {
+  margin-top: 73px;
+  margin-bottom: 32px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
+.about-us-text {
+  margin-bottom: 40px;
+}
+
 .about-us-subtext {
+  margin-bottom: 23px;
   font-weight: 700;
+}
+
+.about-us-stats-list {
+  display: flex;
+}
+
+.about-us-stats-item span {
+  text-align: right;
 }
 
 .about-us-text-bold {
@@ -141,10 +254,22 @@ a {
   text-align: center;
 }
 
+/*-----Section Our clients-----*/
+
+.our-clients-list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
 .list-right-number {
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
+}
+
+.our-clients-item {
+  justify-self: center;
+  align-self: center;
 }
 
 .list-right-text,
@@ -173,12 +298,62 @@ a {
   line-height: 22px;
 }
 
+/*---Section Footer----*/
+.footer-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-inner {
+  margin-bottom: 68px;
+}
+
+.map {
+  margin:0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.social-block {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--another-gray);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
+
+.social-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 63px;
+}
+
+.social-list {
+  display: flex;
+  margin-right: 140px;
+}
+
+
+/*header*/
+.header {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 /*----Catalog----*/
  .main-page-title {
    font-size: 55px;
    line-height: 55px;
  }
+
+/*---1ая секция Form---*/
 
  .legend,
  .sort-text {
@@ -192,7 +367,16 @@ a {
    line-height: 18px;
    opacity: .3;
    text-transform: uppercase;
+   color: var(--black);
  }
+
+  .sort-item {
+    margin-right: 25px;
+  }
+
+  .sort-item:last-child {
+    margin-right: 0px;
+  }
 
  .input-text {
    font-size: 16px;
@@ -219,3 +403,82 @@ a {
    line-height: 18px;
    color: var(--black)
  }
+
+.pagination-list {
+  display: flex;
+  margin-top: 72px;
+}
+
+ .form-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+ }
+
+ .form-group:first-child {
+   margin-top: 34px;
+ }
+
+ .form-group:nth-child(2) {
+   margin-top: 60px;
+   margin-bottom: 40px;
+ }
+
+ .form-group:nth-child(3) {
+   margin-bottom: 47px;
+ }
+
+ /*---Сетка в Catalog---*/
+
+ .catalog-main-page {
+   display: grid;
+   grid-template-columns: min-content 1fr;
+   grid-column-gap: 140px;
+   grid-template-rows: min-content 1fr;
+ }
+
+ .form {
+   grid-column: 1/2;
+   grid-row: 1/-1;
+ }
+
+ .sort {
+   justify-content: space-between;
+ }
+
+ .products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 41px;
+  grid-row-gap: 31px;
+ }
+
+.product-info {
+  display: none;
+}
+
+ .sort,
+ .sort-list {
+   display: flex;
+   align-items: center;
+ }
+
+ .form-title:nth-child(1) .form-title {
+   margin-bottom: 40px;
+ }
+
+ .form-group:nth-child(2) .form-title {
+   margin-bottom: 20px;
+ }
+
+ .form-group:nth-child(3) .form-title {
+   margin-bottom: 30px;
+ }
+
+.pagination-list-item {
+  margin-right: 11px;
+}
+
+.pagination-list-item:nth-child(3) {
+  margin-right: 0;
+}
