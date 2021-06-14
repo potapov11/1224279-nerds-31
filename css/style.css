@@ -116,6 +116,10 @@ a {
   margin-right: 45px;
 }
 
+.nav-item-active {
+  border-bottom: 2px solid var(--red);
+}
+
 .nav-link-logo {
   margin-right: 200px;
 }
@@ -150,6 +154,14 @@ a {
   height: 65px;
 }
 
+.img-logo:hover {
+  opacity: 0.7;
+}
+
+.img-logo:active {
+  opacity: 0.3;
+}
+
 .advantages-img {
   width: 760px;
   height: 431px;
@@ -165,7 +177,22 @@ a {
   height: 208px;
 }
 
-.our-clients-list-img {
+.logo-academy {
+  width: 199px;
+  height: 57px;
+}
+
+.logo-borodinski {
+  width: 209;
+  height: 90px;
+}
+
+.logo-pink {
+  width: 185px;
+  height: 52px;
+}
+
+.logo-mishka {
   width: 173px;
   height: 84px;
 }
@@ -209,6 +236,17 @@ a {
   line-height: 30px;
 }
 
+.nav-link:hover,
+.nav-link-basket:hover {
+  color:var(--red);
+}
+
+.nav-link:active,
+.nav-link-basket:active {
+  color: var(--black);
+  opacity: 0.3;
+}
+
 .advantages-text {
   margin-bottom: 25px;
   font-size: 55px;
@@ -245,6 +283,37 @@ a {
   background-color: var(--red);
 }
 
+.advantages-button:hover,
+.red-button:hover {
+  background-color: var(--medium-red);
+}
+
+.advantages-button:active,
+.red-button:active {
+  background-color: var(--dark-red);
+}
+
+.green-button {
+  background-color: var(--green);
+}
+.green-button:hover {
+  background-color: var(--medium-green);
+}
+.green-button:active {
+  background-color: var(--dark-green);
+}
+
+.yellow-button {
+  background-color: var(--yellow);
+}
+.yellow-button:hover {
+  background-color: var(--medium-yellow);
+}
+
+.yellow-button:active {
+  background-color: var(--dark-yellow);
+}
+
 /*---- section SERVICES----*/
 
 .services {
@@ -267,6 +336,8 @@ a {
 .services-text {
   margin-bottom: 16px;
 }
+
+
 
 /*section -----ABOUT US----*/
 
@@ -354,6 +425,18 @@ a {
   line-height: 22px;
 }
 
+.our-clients-list-img {
+  opacity: 0.2;
+}
+.our-clients-list-img:hover {
+  opacity: 1;
+}
+.our-clients-list-img:active {
+  opacity: 0.1;
+}
+
+
+
 /*---Section Footer----*/
 .footer-wrapper {
   width: 100%;
@@ -390,6 +473,18 @@ a {
   border-radius: 50%;
 }
 
+.social-list-link:hover {
+  background-color: var(--medium-red);
+}
+
+.social-list-link:active {
+  background-color: var(--dark-red);
+}
+.social-list-link:active .social-list-img {
+  opacity: 0.3;
+}
+
+
 .social-block {
   display: flex;
   align-items: center;
@@ -404,7 +499,7 @@ a {
 
 /*header*/
 .header {
-  
+
 }
 
 /*----Catalog----*/
