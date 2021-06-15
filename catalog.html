@@ -19,21 +19,23 @@
           <a class="nav-link-logo" href="index.html">
             <img class="img-logo" src="img/index-img/nerds-logo.svg" width="159" height="65" alt="Логотип дизайн-студии Нёрдс">
           </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Студия</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Клиенты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="catalog.html">Магазин</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <a class="nav-link-basket" href="#">Корзина</a>
+          <div class="header-inner">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Студия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Клиенты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Магазин</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <a class="nav-link-basket" href="#">Корзина</a>
+          </div>
         </nav>
         <h1 class="main-page-title">Магазин готовых шаблонов</h1>
       </div>
@@ -134,11 +136,21 @@
           <li class="sort-item">
             <a class="sort-list-link" href="#">По названию</a>
           </li>
+          <div>
+            <a href="#">
+              <svg class="icon-down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#231F20"/>
+              </svg>
+            </a> <!---Под стрклочки---->
+            <a href="#">
+              <svg class="icon-up" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+                </g>
+              </svg>
+            </a> <!---Под стрклочки---->
+          </div>
         </ul>
-        <div>
-          <a href="#"></a> <!---Под стрклочки---->
-          <a href="#"></a> <!---Под стрклочки---->
-        </div>
       </div>
 
       <!---2ая секция--->
@@ -146,14 +158,14 @@
       <section class="products">
         <h2 class="visually-hidden">Шаблоны купить</h2>
         <ul class="products-list">
-          <li class="card-item">
+          <li class="products-item">
             <img class="products-img" src="img/catalog-img/img-sedona-2.jpg" width="358" height="578" alt="Пример дизайна сайта Седона">
             <div class="product-info">
               <h3 class="products-subtitle visually-hidden">Макет Sedona</h3>
               <p class="products-text">Sedona</p>
-              <p class="products-subtext">Информационный сайт для туристов<br>
+              <p class="products-subtext">Информационный сайт<br>
               для туристов</p>
-              <a class="button" href="#">9990</a>
+              <a class="button red-button" href="#">9990</a>
             </div>
           </li>
           <li class="products-item">
@@ -164,17 +176,17 @@
               <p class="products-subtext">Продуктовый лендинг<br>
               приложения для iOS и Android<br>
               </p>
-              <a class="button" href="#">9990</a>
+              <a class="button red-button" href="#">9990</a>
             </div>
           </li>
           <li class="products-item">
             <img class="products-img" src="img/catalog-img/img-barbershop.jpg" width="358" height="578" alt="Пример дизайна сайта Borodinski">
             <div class="product-info">
-              <h3 class="products-subtitle">Макет Barbershop</h3>
+              <h3 class="products-subtitle visually-hidden">Макет Barbershop</h3>
               <p class="products-text">Barbershop</p>
               <p class="products-subtext">Сайт салона красоты.<br>
                 Для мужчин, да.</p>
-              <a class="button" href="#">9990</a>
+              <a class="button red-button" href="#">9990</a>
             </div>
           </li>
           <li class="products-item">
@@ -184,7 +196,7 @@
               <p class="products-text">MISHKA</p>
               <p class="products-subtext">Интернет-магазин<br>
                 вязаных игрушек</p>
-              <a class="button" href="#">9990</a>
+              <a class="button red-button" href="#">9990</a>
             </div>
           </li>
           <li class="products-item">
@@ -194,7 +206,7 @@
               <p class="products-text">A PLUS</p>
               <p class="products-subtext">Лендинг курсов повышения<br>
                  квалификации</p>
-              <a class="button" href="#">9990</a>
+              <a class="button red-button" href="#">9990</a>
             </div>
           </li>
           <li class="products-item">
@@ -204,7 +216,7 @@
               <p class="products-text">КВАСТ</p>
               <p class="products-subtext">Промо-сайт производителя<br>
                 крафтового кваса</p>
-              <a class="button" href="#">9990</a>
+              <a class="button red-button" href="#">9990</a>
             </div>
           </li>
         </ul>
