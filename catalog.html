@@ -49,16 +49,22 @@
         <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset class="form-group">
             <legend class="form-title" >Стоимость</legend>
-            <div>
-              <div></div> <!---DIVы под ползунки--->
-              <div></div> <!---DIVы под ползунки--->
+            <div class="range-area">
+              <div class="line">
+                <div class="line-progress" style="width: 70%;">
+                </div>
+              </div>
+              <div class="range btn-range-min"></div>
+              <div class="range btn-range-max"></div>
             </div>
-            <label class="label-price"> От
-              <input class="form-control" type="text" name="min-price" value="0">
-            </label>
-            <label class="label-price"> До
-              <input class="form-control" type="text" name="max-price" value="15000">
-            </label>
+            <div class="price-controls">
+              <label class="label-price"> От
+                <input class="form-control" type="text" name="min-price" value="0">
+              </label>
+              <label class="label-price"> До
+                <input class="form-control" type="text" name="max-price" value="15000">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form-group">

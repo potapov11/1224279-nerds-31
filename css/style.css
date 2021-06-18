@@ -25,6 +25,7 @@
   --styleguide-gray: #b4b9bb;
   --button-gray: #d5d5d5;
   --little-gray: #D7DCDE;
+  --range-btn-gray: #ababab;
   --black-01: rgba(0, 0, 0, 0.1);
   --black-03:  rgba(0, 0, 0, 0.3)
 }
@@ -580,20 +581,78 @@ a {
   margin-top: 72px;
 }
 
- .form-group {
+/*-- Fieldset Range--*/
+.form-group {
   border: none;
   padding: 0;
   margin: 0;
  }
 
-/*-- Fieldset Range--*/
+ .form-group {
+  width: 260px;
+}
+
+.range-area {
+  position: relative;
+  height: 80px;
+  background-color: var(--mini-gray);
+  padding: 39px 31px 39px 24px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+
+.line-progress {
+  width: 70%;
+  height: 3px;
+  background-color: var(--green);
+}
+
+.line {
+  height: 2px;
+  background-color: var(--catalog-line-gray);
+  width: 70%;
+}
+
+.range {
+  position: absolute;
+  top: 32px;
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  padding: 0;
+  border: solid 8px red;
+  border-radius: 50%;
+}
+
+.btn-range-min {
+  left: 30;
+}
+
+.btn-range-max {
+  left: 170px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control {
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--mini-gray);
+  border: none;
+  border-radius: 3px;
+}
+
+.form-control:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
 
 
 /*--End Fieldset Range*/
-
-.form-group {
-  width: 260px;
-}
 
  .form-group:nth-child(2) {
    margin-top: 60px;
@@ -622,6 +681,7 @@ a {
 
 .products-item:hover::before {
   opacity: 1;
+  transition: 0.5 linear;
 }
 
 .product-info {
@@ -637,6 +697,7 @@ a {
 
 .products-item:hover .product-info {
   display: block;
+  transition: 1s linear;
 }
 
 .products-text {
@@ -684,7 +745,7 @@ a {
  .products-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 110px;
+  grid-column-gap: 44px;
   grid-row-gap: 86px;
  }
 
