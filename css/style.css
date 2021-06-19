@@ -588,9 +588,56 @@ a {
   margin: 0;
  }
 
+ .range-form {
+   margin-bottom: 54px;
+ }
+
  .form-group {
   width: 260px;
 }
+/*--Стилизация Filter-form--*/
+
+.checkbox {
+  margin-bottom: 16px;
+}
+
+.form-group-wrapper {
+  width: 208px;
+}
+
+.form-group-wrapper .form-title {
+  margin-bottom: 13px;
+}
+
+.form-group-wrapper label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* .checkbox-input + label::before {
+  content: "";
+  position: absolute;
+  background: url("/img/catalog-img/checkbox-off.svg") no-repeat;
+  left: -30px;
+  width: 25px;
+  height: 23px;
+}
+
+.checkbox-input:checked + label::after {
+  content:"";
+  position: absolute;
+  left: -28px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  background-image: url("/img/catalog-img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+} */
+
+/*--End of filter form--*/
 
 .range-area {
   position: relative;

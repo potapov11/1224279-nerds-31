@@ -47,7 +47,7 @@
       <section class="form">
         <h2 class="visually-hidden" >Фильтр поиска</h2>
         <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
-          <fieldset class="form-group">
+          <fieldset class="form-group range-form">
             <legend class="form-title" >Стоимость</legend>
             <div class="range-area">
               <div class="line">
@@ -67,65 +67,58 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-group">
-            <legend class="form-title" >Сетка</legend>
-              <ul class="radio-list">
-                <li class="radio-item">
-                  <label class="radio">
-                    <input class="radio-input" type="radio" name="layout" value="adaptive" checked>
-                    <span class="radio-text" >Адаптивная</span>
-                  </label>
-                </li>
-                <li class="radio-item">
-                  <label class="radio">
-                    <input class="radio-input" type="radio" name="layout" value="fixed">
-                    <span class="radio-text" >Фиксированная</span>
-                  </label>
-                </li>
-                <li class="radio-item">
-                  <label class="radio">
-                    <input class="radio-input" type="radio" name="layout" value="rubber">
-                    <span class="radio-text" >Резиновая</span>
-                  </label>
-                </li>
-              </ul>
-          </fieldset>
-
-          <fieldset class="form-group">
-            <legend class="form-title" >Особенности</legend>
-              <ul class="checkbox-list">
-                <li class="checkbox-item">
-                  <label class="checkbox">
-                    <input class="checkbox-input" type="checkbox" name="slider" checked value="slider">
-                     <span class="checkbox-text">Слайдер</span>
-                  </label>
-                </li>
-                <li class="checkbox-item">
-                  <label class="checkbox">
-                    <input class="checkbox-input" type="checkbox" name="advantages" value="advantages">
-                     <span class="checkbox-text">Блок преимуществ</span>
-                  </label>
-                </li>
-                <li class="checkbox-item">
-                  <label class="checkbox">
-                    <input class="checkbox-input" type="checkbox" name="news" checked value="news">
-                     <span class="checkbox-text">Новости</span>
-                  </label>
-                </li>
-                <li class="checkbox-item">
-                  <label class="checkbox">
-                    <input class="checkbox-input" type="checkbox" name="galery" value="galery">
-                     <span class="checkbox-text">Галерея</span>
-                  </label>
-                </li>
-                <li class="checkbox-item">
-                  <label class="checkbox">
-                    <input class="checkbox-input" type="checkbox" name="basket" value="basket">
-                     <span class="checkbox-text">Корзина</span>
-                  </label>
-                </li>
-              </ul>
-          </fieldset>
+          <div class="form-group-wrapper">
+            <fieldset class="form-group">
+              <legend class="form-title" >Сетка</legend>
+                <ul class="radio-list">
+                  <li class="radio-item">
+                    <label class="radio" for="layout">
+                      <input class="radio-input visually-hidden" type="radio" name="layout" value="adaptive" checked>
+                      <span class="radio-text" >Адаптивная</span>
+                    </label>
+                  </li>
+                  <li class="radio-item">
+                    <label class="radio" for="laout">
+                      <input class="radio-input visually-hidden" type="radio" name="layout" value="fixed">
+                      <span class="radio-text" >Фиксированная</span>
+                    </label>
+                  </li>
+                  <li class="radio-item">
+                    <label class="radio" for="layout">
+                      <input class="radio-input visually-hidden" type="radio" name="layout" value="rubber">
+                      <span class="radio-text" >Резиновая</span>
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+  
+            <fieldset class="form-group">
+              <legend class="form-title" >Особенности</legend>
+                <ul class="checkbox-list">
+                  <li class="checkbox-item">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="slider" checked value="slider" id="checkbox-slider">
+                      <label class="checkbox" for="checkbox-slider">Слайдер</label>
+                  </li>
+                  <li class="checkbox-item">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="advantages" value="advantages" id="checkbox-advantages"> 
+                      <label class="checkbox" for="checkbox-advantages">Блок преимуществ</label>
+                  </li>
+                  <li class="checkbox-item">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="news" checked value="news" id="checkbox-news">
+                      <label class="checkbox" for="checkbox-news">Новости</label>
+                  </li>
+                  <li class="checkbox-item">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="galery" value="galery" id="checkbox-galery">
+                      <label class="checkbox" for="checkbox-galery">Галерея</label>
+                  </li>
+                  <li class="checkbox-item">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="basket" value="basket" id="checkbox-basket">
+                      <label class="checkbox" for="checkbox-basket">Корзина</label>
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
           <button class="form-button button-secondary" type="submit">Показать</button>
         </form>
       </section>
