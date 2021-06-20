@@ -546,6 +546,11 @@ a {
     padding: 10px 0;
   }
 
+.arrow {
+  display: inline-block;
+  padding: 10px 0;
+}
+
   .sort-item:last-child {
     margin-right: 0px;
   }
@@ -603,6 +608,9 @@ a {
 
 .form-group-wrapper {
   width: 208px;
+  position: absolute;
+  top: 500px;
+  left: 150px;
 }
 
 .form-group-wrapper .form-title {
@@ -616,10 +624,11 @@ a {
   user-select: none;
 }
 
-/* .checkbox-input + label::before {
+.checkbox-input + label::before {
   content: "";
   position: absolute;
   background: url("/img/catalog-img/checkbox-off.svg") no-repeat;
+  background-position: 0 0;
   left: -30px;
   width: 25px;
   height: 23px;
@@ -628,14 +637,44 @@ a {
 .checkbox-input:checked + label::after {
   content:"";
   position: absolute;
-  left: -28px;
+  left: -30px;
   top: 1px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-image: url("/img/catalog-img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-} */
+}
+
+/*--radio--*/
+
+.radio-input + label::before {
+  content: "";
+  position: absolute;
+  opacity: .4;
+  top: 0;
+  left: -30px;
+  width: 25px;
+  height: 25px;
+  border: 5px solid var(--catalog-gray);
+  border-radius: 50%;
+}
+
+.radio-input:checked + label::after {
+  content: "";
+  position: absolute;
+  opacity: .4;
+  top: 8px;
+  left: -22px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--catalog-gray);
+  border-radius: 50%;
+}
+
+.radio {
+  margin-bottom: 18px;
+}
 
 /*--End of filter form--*/
 
@@ -700,6 +739,14 @@ a {
 
 
 /*--End Fieldset Range*/
+
+.form-button {
+  width: 260px;
+  height: 50px;
+  background-color: var(--mini-gray);
+  border: none;
+  cursor: pointer;
+}
 
  .form-group:nth-child(2) {
    margin-top: 60px;
@@ -786,7 +833,8 @@ a {
  .sort {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 120px;
+  grid-column-gap: 45px;
+  margin-bottom: 32px;
  }
 
  .products-list {
@@ -819,8 +867,14 @@ a {
 
 .pagination-list-item {
   margin-right: 11px;
+  border: 1px solid var(--pagination-gray);
 }
 
-.pagination-list-item:nth-child(3) {
+.pagination-link {
+  display: inline-block;
+  padding: 17px 20px 15px;
+}
+
+.pagination-list-item:nth-child(4) {
   margin-right: 0;
 }

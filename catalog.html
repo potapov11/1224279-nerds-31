@@ -72,22 +72,16 @@
               <legend class="form-title" >Сетка</legend>
                 <ul class="radio-list">
                   <li class="radio-item">
-                    <label class="radio" for="layout">
-                      <input class="radio-input visually-hidden" type="radio" name="layout" value="adaptive" checked>
-                      <span class="radio-text" >Адаптивная</span>
-                    </label>
+                    <input class="radio-input visually-hidden" type="radio" name="layout" value="rubber" id="radio-adaptive" checked>
+                    <label class="radio" for="radio-adaptive">Адаптивная</label>
                   </li>
                   <li class="radio-item">
-                    <label class="radio" for="laout">
-                      <input class="radio-input visually-hidden" type="radio" name="layout" value="fixed">
-                      <span class="radio-text" >Фиксированная</span>
-                    </label>
+                    <input class="radio-input visually-hidden" type="radio" name="layout" value="rubber" id="radio-fixed">
+                    <label class="radio" for="radio-fixed">Фиксированная</label>
                   </li>
                   <li class="radio-item">
-                    <label class="radio" for="layout">
-                      <input class="radio-input visually-hidden" type="radio" name="layout" value="rubber">
-                      <span class="radio-text" >Резиновая</span>
-                    </label>
+                      <input class="radio-input visually-hidden" type="radio" name="layout" value="rubber" id="radio-layout">
+                      <label class="radio" for="radio-layout">Резиновая</label>
                   </li>
                 </ul>
             </fieldset>
@@ -136,12 +130,12 @@
             <a class="sort-list-link" href="#">По названию</a>
           </li>
           <div>
-            <a href="#">
+            <a class="arrow" href="#">
               <svg class="icon-down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="#231F20"/>
               </svg>
             </a> <!---Под стрклочки---->
-            <a href="#">
+            <a class="arrow" href="#">
               <svg class="icon-up" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.2">
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
