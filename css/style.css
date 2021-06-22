@@ -14,6 +14,7 @@
   --catalog-gray: #4D4D4D;
   --catalog-another-gray: #C4C4C4;
   --pagination-gray: #DBDBDB;
+  --pagination-hover-gray: #DFDFDF;
   --catalog-line-gray: #D7DCDF;
   --border-gray: #F2F2F2;
   --medium-yellow: #EAB534;
@@ -26,6 +27,7 @@
   --button-gray: #d5d5d5;
   --little-gray: #D7DCDE;
   --range-btn-gray: #ababab;
+  --arrow-dark: #231F20;
   --black-01: rgba(0, 0, 0, 0.1);
   --black-03:  rgba(0, 0, 0, 0.3)
 }
@@ -127,6 +129,11 @@ a {
   border-bottom: 2px solid var(--red);
 }
 
+.nav-item:nth-child(3) .catalog-nav-link {
+  padding-bottom: 13px;
+  border-bottom: 2px solid var(--red);
+}
+
 .nav-link-logo {
   margin-right: 200px;
 }
@@ -224,6 +231,7 @@ a {
   height: 578px;
 }
 
+
 .map-img {
   width: 1440px;
   height: 416px;
@@ -254,6 +262,10 @@ a {
   opacity: 0.3;
 }
 
+.advantages {
+  background-color: var(--mini-gray);
+}
+
 .advantages-text {
   margin-bottom: 25px;
   font-size: 55px;
@@ -267,13 +279,64 @@ a {
   color: var(--dark-gray);
 }
 
-.advantages-item {
+/*--------------------Slider-----*/
+
+.advantages-item-1 {
   width: 100%;
   height: 431px;
-  background-image: url("/img/index-img/nerds-slide-1.jpg");
+  background-image: url("/img/index-img/nerds-index-slide1-png.png");
   background-position: right;
   background-repeat: no-repeat;
 }
+
+.advantages-item-2 {
+  width: 100%;
+  height: 431px;
+  background-image: url("/img/index-img/nerds-index-slide2-png.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.advantages-item-3 {
+  width: 100%;
+  height: 431px;
+  background-image: url("/img/index-img/nerds-index-slide3-png.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.slide {
+  display: none;
+}
+
+.advantages-list .slide-current {
+  display: block;
+}
+
+.advantages-list {
+  padding-top: 78px;
+}
+
+.div-slide-wrapper {
+  position: relative;
+}
+
+.slider-buttons {
+  position: absolute; 
+  top: 400px;
+  left: 550px;
+}
+
+.slider-button {
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--catalog-another-gray);
+  border: 9px solid var(--white);
+  border-radius: 50%;
+}
+
+/*--------------------Slider------*/
 
 .advantages-item-inner {
   width: 380px;
@@ -327,6 +390,7 @@ a {
 
 .services {
   padding-bottom: 100px;
+  padding-top: 80px;
 }
 
 .services-list {
@@ -397,9 +461,16 @@ a {
 
 /*-----Section Our clients-----*/
 
+.our-clients {
+  padding-bottom: 80px;
+}
+
 .our-clients-list {
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  border-top: 2px solid var(--mini-gray);
+  border-bottom: 2px solid var(--mini-gray);
+  padding: 46px 0;
 }
 
 .list-right-number {
@@ -409,8 +480,32 @@ a {
 }
 
 .our-clients-item {
+  position: relative;
   justify-self: center;
   align-self: center;
+}
+
+.our-clients-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background-color: var(--mini-gray);
+  width: 2px;
+  height: 52px;
+  align-items: center;
+}
+
+.our-clients-item:nth-child(2)::before {
+  top: 20px;
+}
+
+.our-clients-item:nth-child(4)::before {
+  top: 20px;
+}
+
+.logo-client-item::before {
+  display: none;
 }
 
 .list-right-text,
@@ -422,11 +517,18 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  padding-bottom: 22px;
+}
+
+.footer-contacts button {
+  display: inline-block;
 }
 
 .inner-phone-link {
+  display: inline-block;
   color:var(--text-gray);
   line-height: 18px;
+  padding-bottom: 37px;
 }
 
 .social-text {
@@ -457,11 +559,52 @@ a {
   margin: 0 auto;
 }
 
-.footer-inner {
-  margin-bottom: 68px;
+.footer-contacts {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 319px;
+  padding: 50px;
+  background-color: var(--white);
+  text-align: center;
 }
 
-.map {
+.footer-inner {
+  position: relative;
+  height: 416px;
+}
+
+/*--map responsive--*/
+/* .map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+} */
+
+.map-responsive::before {
+  content: "";
+  position: absolute;
+  top: 62px;
+  left: 775px;
+  background-image: url(/img/index-img/map-logo-nerds.png);
+  width: 235px;
+  z-index: 20;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height: 416px;
+  width:100%;
+  position:absolute;
+}
+/*----*/
+
+/* .map {
   width: 100%;
   height: 416px;
 }
@@ -469,11 +612,12 @@ a {
 .map-img {
   object-fit: cover;
   width: 100vw;
-}
+} */
 
 
 .social-block {
   max-width: 1160px;
+  padding-top: 68px;
   margin: 0 auto;
 }
 
@@ -514,7 +658,8 @@ a {
 
 /*header*/
 .header {
-
+  padding-top: 48px;
+  background-color: var(--mini-gray);
 }
 
 /*----Catalog----*/
@@ -539,6 +684,14 @@ a {
    opacity: .3;
    text-transform: uppercase;
    color: var(--black);
+ }
+
+ .sort-list-link:hover {
+   opacity: .6;
+ }
+
+ .sort-list-link:active {
+   opacity: 1;
  }
 
   .sort-item {
@@ -624,26 +777,24 @@ a {
   user-select: none;
 }
 
-.checkbox-input + label::before {
-  content: "";
-  position: absolute;
-  background: url("/img/catalog-img/checkbox-off.svg") no-repeat;
-  background-position: 0 0;
-  left: -30px;
-  width: 25px;
-  height: 23px;
+.checkbox-input:checked + .check-img {
+  background-image: url(/img/catalog-img/checkbox-on-2.svg);
 }
 
-.checkbox-input:checked + label::after {
-  content:"";
+.check-img {
   position: absolute;
+  top: 0;
   left: -30px;
-  top: 1px;
   width: 25px;
   height: 25px;
-  background-image: url("/img/catalog-img/checkbox-on.svg");
+  background-image: url(/img/catalog-img/checkbox-off-2.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: .6;
+}
+
+.checkbox:hover .check-img {
+  opacity: 1;
 }
 
 /*--radio--*/
@@ -651,25 +802,30 @@ a {
 .radio-input + label::before {
   content: "";
   position: absolute;
-  opacity: .4;
   top: 0;
   left: -30px;
   width: 25px;
   height: 25px;
-  border: 5px solid var(--catalog-gray);
+  border: 4px solid var(--catalog-gray);
+  opacity: 0.4;
   border-radius: 50%;
 }
 
 .radio-input:checked + label::after {
   content: "";
   position: absolute;
-  opacity: .4;
   top: 8px;
   left: -22px;
   width: 9px;
   height: 9px;
   background-color: var(--catalog-gray);
+  opacity: 0.4;
   border-radius: 50%;
+}
+
+.radio-item:hover .radio::after,
+.radio-item:hover .radio::before {
+  opacity: 1;
 }
 
 .radio {
@@ -704,9 +860,9 @@ a {
   top: 32px;
   width: 4px;
   height: 4px;
-  background-color: black;
+  background-color: var(--range-btn-gray);
   padding: 0;
-  border: solid 8px red;
+  border: solid 8px var(--white);
   border-radius: 50%;
 }
 
@@ -789,6 +945,10 @@ a {
   padding: 26px 44px;
 }
 
+.products {
+  padding-bottom: 60px;
+}
+
 .products-item:hover .product-info {
   display: block;
   transition: 1s linear;
@@ -815,6 +975,39 @@ a {
   width: 200px;
   height: 50px;
 }
+
+/*--Цвета стрелок--*/
+
+.icon-down path {
+  fill: var(--light-gray);
+  opacity: .2;
+}
+
+.icon-down:hover path {
+  fill: var(--light-gray);
+  opacity: 1;
+} 
+
+.icon-down:active path {
+  fill: var(--arrow-dark);
+  opacity: 1;
+}
+
+.icon-up path {
+  fill: var(--light-gray);
+  opacity: .2;
+}
+
+.icon-up:hover path {
+  fill: var(--light-gray);
+  opacity: 1;
+}
+
+.icon-up:active path {
+  fill: var(--arrow-dark);
+  opacity: 1;
+}
+/*--конец цветов стрелок--*/
 
  /*---Сетка в Catalog---*/
 
@@ -868,11 +1061,28 @@ a {
 .pagination-list-item {
   margin-right: 11px;
   border: 1px solid var(--pagination-gray);
+  background-color: var(--mini-gray);
+}
+
+.pagination-list-item:hover {
+  background-color: var(--pagination-hover-gray);
+}
+
+.pagination-list-item:active {
+  background-color: var(--button-gray);
+}
+
+.pagination-list-item:first-child {
+  background-color: var(--white);
 }
 
 .pagination-link {
   display: inline-block;
   padding: 17px 20px 15px;
+}
+
+.pagination-list-item:active .pagination-link {
+  opacity: .3;
 }
 
 .pagination-list-item:nth-child(4) {
