@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="header">
+    <header class="header catalog-header">
       <div class="container">
         <nav class="header-nav">
           <a class="nav-link-logo" href="index.html">
@@ -22,16 +22,16 @@
           <div class="header-inner">
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="#">Студия</a>
+                <a class="nav-link catalog-nav-link" href="#">Студия</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Клиенты</a>
+                <a class="nav-link catalog-nav-link" href="#">Клиенты</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="catalog.html">Магазин</a>
+                <a class="nav-link catalog-nav-link" href="catalog.html">Магазин</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link catalog-nav-link" href="#">Контакты</a>
               </li>
             </ul>
             <a class="nav-link-basket" href="#">Корзина</a>
@@ -87,28 +87,42 @@
             </fieldset>
   
             <fieldset class="form-group">
-              <legend class="form-title" >Особенности</legend>
+              <legend class="form-title">Особенности</legend>
                 <ul class="checkbox-list">
                   <li class="checkbox-item">
-                      <input class="checkbox-input visually-hidden" type="checkbox" name="slider" checked value="slider" id="checkbox-slider">
-                      <label class="checkbox" for="checkbox-slider">Слайдер</label>
+                      <label class="checkbox" for="checkbox-slider">
+                      <input class="checkbox-input visually-hidden" checked type="checkbox" name="slider" value="slider" id="checkbox-slider">
+                      <span class="check-img"></span>
+                      Слайдер
+                      </label>
                   </li>
                   <li class="checkbox-item">
-                      <input class="checkbox-input visually-hidden" type="checkbox" name="advantages" value="advantages" id="checkbox-advantages"> 
-                      <label class="checkbox" for="checkbox-advantages">Блок преимуществ</label>
+                      <label class="checkbox" for="checkbox-advantages">
+                      <input class="checkbox-input visually-hidden"  type="checkbox" name="advantages" value="advantages" id="checkbox-advantages"> 
+                      <span class="check-img"></span> 
+                      Блок преимуществ
+                      </label>
                   </li>
                   <li class="checkbox-item">
-                      <input class="checkbox-input visually-hidden" type="checkbox" name="news" checked value="news" id="checkbox-news">
-                      <label class="checkbox" for="checkbox-news">Новости</label>
+                      <label class="checkbox" for="checkbox-news">
+                      <input class="checkbox-input visually-hidden" checked type="checkbox" name="news" value="news" id="checkbox-news">
+                      <span class="check-img"></span>
+                      Новости
+                      </label>
                   </li>
                   <li class="checkbox-item">
+                      <label class="checkbox" for="checkbox-galery">
                       <input class="checkbox-input visually-hidden" type="checkbox" name="galery" value="galery" id="checkbox-galery">
-                      <label class="checkbox" for="checkbox-galery">Галерея</label>
+                      <span class="check-img"></span>
+                      Галерея
+                      </label>
                   </li>
                   <li class="checkbox-item">
-                      <input class="checkbox-input visually-hidden" type="checkbox" name="basket" value="basket" id="checkbox-basket">
-                      <label class="checkbox" for="checkbox-basket">Корзина</label>
-                    </label>
+                      <label class="checkbox" for="checkbox-basket">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="basket" disabled value="basket" id="checkbox-basket">
+                      <span class="check-img"></span>
+                      Корзина
+                      </label>
                   </li>
                 </ul>
             </fieldset>
@@ -129,20 +143,20 @@
           <li class="sort-item">
             <a class="sort-list-link" href="#">По названию</a>
           </li>
-          <div>
-            <a class="arrow" href="#">
-              <svg class="icon-down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" fill="#231F20"/>
-              </svg>
-            </a> <!---Под стрклочки---->
-            <a class="arrow" href="#">
-              <svg class="icon-up" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.2">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
-                </g>
-              </svg>
-            </a> <!---Под стрклочки---->
-          </div>
+          <li class="sort-item">
+            <div>
+              <a class="arrow" href="#">
+                <svg class="icon-arrow icon-down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#231F20"/>
+                </svg>
+              </a> <!---Под стрклочки---->
+              <a class="arrow" href="#">
+                <svg class="icon-arrow icon-up" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+                </svg>
+              </a> <!---Под стрклочки---->
+            </div>
+          </li>
         </ul>
       </div>
 
@@ -215,7 +229,7 @@
         </ul>
         <ul class="pagination-list">
           <li class="pagination-list-item">
-            <a class="pagination-link" >1</a>
+            <a class="pagination-link">1</a>
           </li>
           <li class="pagination-list-item">
             <a class="pagination-link" href="#">2</a>
@@ -237,42 +251,42 @@
       <div class="footer-wrapper">
         <div class="footer-inner">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <div class="map">
-            <img class="map-img" src="img/index-img/map.jpg" width="1440" height="416" alt="Карта с адресом-Санкт-Петербург, набережная Карповки">
-            <img class="map-logo-img" src="img/index-img/map-logo-nerds.png" width="231" height="190" alt="Логотип на карте" >
-          </div>
-
-          <div class="footer-contacts">
-            <p class="inner-text">NЁRDS DESIGN STUDIO</p>
-            <p class="inner-subtext">наб. Реки Карповки, <br>
-              5 лит П, Санкт-Петербург</p>
-            <a class="inner-phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
-            <a class="button" href="#">Напишите нам</a>
-          </div>
-        </div>
-        <div class="social-block container">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-list-link" href="https://vk.com/">
-                <img class="social-list-img" src="img/index-img/vk-logo.svg" width="26" height="15" alt="Вконтакте логотип">
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-list-link" href="https://www.facebook.com/">
-                <img class="social-list-img" src="img/index-img/fb-logo.svg" width="12" height="22" alt="Facebook логотип">
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-list-link" href="https://www.instagram.com/">
-                <img class="social-list-img" src="img/index-img/inst-logo.svg" width="21" height="21" alt="Instagram логотип">
-              </a>
-            </li>
-          </ul>
-          <div class="social-inner">
-            <p class="social-text">Давайте дружить, это выгодно!</p>
-            <p class="social-subtext">Скидка 10% для друзей из социальных сетей.</p>
+          <!-- <div class="map-responsive">  Закомментил по просьбе Наставника
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="1162" height="434" frameborder="0"></iframe>
+          </div>   -->
+          <div class="container">
+            <div class="footer-contacts">
+              <p class="inner-text">NЁRDS DESIGN STUDIO</p>
+              <p class="inner-subtext">наб. Реки Карповки, <br>
+                5 лит П, Санкт-Петербург</p>
+              <a class="inner-phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="button" href="#">Напишите нам</a>
+            </div>
           </div>
         </div>
+          <div class="social-block container">
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-list-link" href="https://vk.com/">
+                  <img class="social-list-img social-img-vk" src="img/index-img/vk-logo.svg" width="26" height="15" alt="Вконтакте логотип">
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-list-link" href="https://www.facebook.com/">
+                  <img class="social-list-img social-img-fb" src="img/index-img/fb-logo.svg" width="12" height="22" alt="Facebook логотип">
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-list-link" href="https://www.instagram.com/">
+                  <img class="social-list-img social-img-insta" src="img/index-img/inst-logo.svg" width="21" height="21" alt="Instagram логотип">
+                </a>
+              </li>
+            </ul>
+            <div class="social-inner">
+              <p class="social-text">Давайте дружить, это выгодно!</p>
+              <p class="social-subtext">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
       </div>
     </footer>
   </body>
