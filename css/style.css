@@ -131,12 +131,6 @@ a {
   z-index: 30;
 }
 
-.header-inner {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav-item {
   margin-right: 45px;
 }
@@ -145,7 +139,7 @@ a {
   border-bottom: 2px solid var(--red);
 }
 
-.nav-item:nth-child(3) .catalog-nav-link {
+.catalog-nav-link.link-active{
   padding-bottom: 13px;
   border-bottom: 2px solid var(--red);
 }
@@ -541,6 +535,77 @@ a {
 }
 
 
+/*Modal-window*/
+.modal-window {
+  display: none;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: max-content min-content;
+  grid-template-rows: repeat(6,max-content); 
+}
+
+.modal-block {
+  display: none;
+}
+
+.modal-window .modal-text {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+  margin: 0; 
+}
+
+.modal {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+
+.button-close {
+  width:20px;
+  height: 20px;
+  justify-self: end;
+}
+
+.modal-name {
+  grid-row:2/3;
+}
+.modal-email {
+  grid-row:2/3;
+  grid-column: 2/3;
+}
+
+.input-name {
+  grid-row:3/4;
+}
+
+.modal-input {
+  margin-bottom: 34px;
+}
+
+.input-email {
+  grid-row:3/4;
+  grid-column: 2/3;
+}
+
+.modal-textarea {
+  grid-row: 4/5;
+}
+.form-text {
+  grid-row: 5/6;
+  grid-column: 1/3;
+  margin-bottom: 47px;
+}
+
+.button-submit {
+  grid-row:6/7;
+}
+/*Modal-window*/
+
+
 
 /*---Section Footer----*/
 .footer-wrapper {
@@ -564,7 +629,7 @@ a {
 }
 
 
-.map-responsive::before {
+.footer-inner::before {
   content: "";
   position: absolute;
   top: 62px;
@@ -794,7 +859,10 @@ a {
   opacity: 1;
 }
 
-
+.radio-item:focus .radio::after,
+.radio-item:focus .radio::before {
+  opacity: 1;
+}
 
 .radio {
   margin-bottom: 18px;
@@ -892,14 +960,17 @@ a {
   top: -39px;
   left: 0;
   background: url("/img/catalog-img/top-of-picture.svg") no-repeat center;
-  width: 360px;
+  width: 346px;
   height: 40px;
   opacity: 0.12;
 }
 
 .products-item:hover::before {
   opacity: 1;
-  transition: 0.5 linear;
+}
+
+.products-item:hover .product-info {
+  display: block;
 }
 
 .product-info {
