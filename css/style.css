@@ -695,78 +695,78 @@ a {
 }
 
 /*----Catalog----*/
- .main-page-title {
-   font-size: 55px;
-   line-height: 55px;
-   text-align: center;
-   margin: 0;
- }
+.main-page-title {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  margin: 0;
+}
 
 /*---1ая секция Form---*/
 
- .legend,
- .sort-text {
-   font-size: 18px;
-   font-weight: 700;
-   line-height: 30px;
-   margin-bottom: 48px;
- }
+.legend,
+.sort-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 48px;
+}
 
- .sort-list-link {
-   font-size: 14px;
-   line-height: 18px;
-   opacity: .3;
-   text-transform: uppercase;
-   color: var(--black);
- }
+.sort-list-link {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: .3;
+  text-transform: uppercase;
+  color: var(--black);
+}
 
- .sort-list-link:hover {
-   opacity: .6;
- }
+.sort-list-link:hover {
+  opacity: .6;
+}
 
- .sort-list-link:active {
-   opacity: 1;
- }
+.sort-list-link:active {
+  opacity: 1;
+}
 
-  .sort-item {
-    margin-right: 25px;
-    padding: 10px 0;
-  }
+.sort-item {
+  margin-right: 25px;
+  padding: 10px 0;
+}
 
 .arrow {
   display: inline-block;
   padding: 10px 0;
 }
 
-  .sort-item:last-child {
-    margin-right: 0px;
-  }
+.sort-item:last-child {
+  margin-right: 0px;
+}
 
- .input-text {
-   font-size: 16px;
-   line-height: 20px;
-   color: var(--dark-gray);
- }
+.input-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--dark-gray);
+}
 
- .products-text {
-   font-size: 18px;
-   font-weight: 700;
-   line-height: 30px;
-   text-align: center;
- }
+.products-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
 
- .products-subtext {
-   line-height: 18px;
-   color: var(--text-gray);
-   text-align: center;
- }
+.products-subtext {
+  line-height: 18px;
+  color: var(--text-gray);
+  text-align: center;
+}
 
- .pagination-link {
-   font-size: 16px;
-   font-weight: 500;
-   line-height: 18px;
-   color: var(--black)
- }
+.pagination-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--black);
+}
 
 .pagination-list {
   display: flex;
@@ -781,7 +781,7 @@ a {
  }
 
  .range-form {
-   margin-bottom: 54px;
+  margin-bottom: 54px;
  }
 
  .form-group {
@@ -941,12 +941,12 @@ a {
 }
 
  .form-group:nth-child(2) {
-   margin-top: 60px;
-   margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 40px;
  }
 
  .form-group:nth-child(3) {
-   margin-bottom: 47px;
+  margin-bottom: 47px;
  }
 
  .products-item {
@@ -1032,15 +1032,15 @@ a {
  /*---Сетка в Catalog---*/
 
  .catalog-main-page {
-   display: grid;
-   grid-template-columns: min-content 1fr;
-   grid-column-gap: 140px;
-   grid-template-rows: min-content 1fr;
-   padding-top: 66px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 140px;
+  grid-template-rows: min-content 1fr;
+  padding-top: 66px;
  }
 
  .catalog-header {
-   padding-bottom: 97px;
+  padding-bottom: 97px;
  }
 
 .catalog-header .header-nav {
@@ -1048,8 +1048,8 @@ a {
 }
 
  .form {
-   grid-column: 1/2;
-   grid-row: 1/-1;
+  grid-column: 1/2;
+  grid-row: 1/-1;
  }
 
  .sort {
@@ -1067,8 +1067,8 @@ a {
  }
 
  .sort-list {
-   display: flex;
-   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
  }
 
 .button-secondary {
@@ -1085,15 +1085,15 @@ a {
 }
 
  .form-title:nth-child(1) .form-title {
-   margin-bottom: 40px;
+  margin-bottom: 40px;
  }
 
  .form-group:nth-child(2) .form-title {
-   margin-bottom: 20px;
+  margin-bottom: 20px;
  }
 
  .form-group:nth-child(3) .form-title {
-   margin-bottom: 30px;
+  margin-bottom: 30px;
  }
 
 .pagination-list-item {
