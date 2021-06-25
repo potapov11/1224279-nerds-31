@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/favicon-152.svg" type="image/svg+xml">
@@ -177,14 +178,14 @@
       <div class="modal-block">
         <form class="modal-window">
           <p class="modal-text">Напишите нам</p>
-          <button class="button-close" type="button">З</button>
+          <button class="button-close" type="button" aria-label="Закрыть"></button>
           <label class="modal modal-name" for="login-name">Ваше имя</label>
           <input class="modal-input input-name" placeholder="Имя Фамилия" type="text" name="login" id="login-name">
           <label class="modal modal-email" for="email">Ваш email</label>
-          <input class="modal-input input-email" placeholder="email@example.com " type="text" name="email" id="e-mail">
+          <input class="modal-input input-email" placeholder="email@example.com " type="email" name="email" id="e-mail">
           <label class="modal modal-textarea" for="text-area"> Текст письма</label>
-          <textarea class="form-text" placeholder="В свободной форме" name="form-text" id="text-area" cols="30" rows="10"></textarea>
-          <input class="button-submit" type="submit">
+          <textarea class="form-textarea" placeholder="В свободной форме" name="form-text" id="text-area" cols="30" rows="6"></textarea>
+          <button class="button button-submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
