@@ -51,6 +51,10 @@
   height: auto;
 }
 
+.products-img {
+  border-radius: 3px;
+}
+
 .advantages-text,
 .advantages-subtext,
 .services-text,
@@ -698,6 +702,7 @@ a {
 .main-page-title {
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
   text-align: center;
   margin: 0;
 }
@@ -735,7 +740,6 @@ a {
 
 .arrow {
   display: inline-block;
-  padding: 10px 0;
 }
 
 .sort-item:last-child {
@@ -749,9 +753,9 @@ a {
 }
 
 .products-text {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
   text-align: center;
 }
 
@@ -770,7 +774,6 @@ a {
 
 .pagination-list {
   display: flex;
-  margin-top: 72px;
 }
 
 /*-- Fieldset Range--*/
@@ -829,6 +832,16 @@ a {
 }
 
 /*--radio--*/
+
+.form label {
+  line-height: 20px;
+}
+
+.label-price {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
 
 .radio-input + label::before {
   content: "";
@@ -949,16 +962,18 @@ a {
   margin-bottom: 47px;
  }
 
- .products-item {
-   position: relative;
- }
+.products-item {
+  position: relative;
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
 
 .products-item::before {
   content:"";
   display: block;
   position: absolute;
+  border-radius: 3px;
   top: -39px;
-  left: 0;
+  left: -1px;
   background: url("/img/catalog-img/top-of-picture.svg") no-repeat center;
   width: 346px;
   height: 40px;
@@ -976,10 +991,11 @@ a {
 .product-info {
   display: none;
   position: absolute;
-  bottom: 0;
+  bottom: 7px;
   left: 0;
   width: 100%;
   text-align: center;
+  border-radius: 3px;
   background-color: var(--mini-gray);
   padding: 26px 44px;
 }
@@ -1064,6 +1080,8 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 44px;
   grid-row-gap: 86px;
+  list-style: none;
+  margin-bottom: 72px;
  }
 
  .sort-list {
@@ -1075,6 +1093,15 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  border-radius: 3px;
+}
+
+.button-secondary:hover {
+  background-color: var(--pagination-hover-gray);
+}
+
+.button-secondary:active {
+  opacity: .3;
 }
 
 .form-title {
@@ -1098,6 +1125,7 @@ a {
 
 .pagination-list-item {
   margin-right: 11px;
+  border-radius: 3px;
   border: 1px solid var(--pagination-gray);
   background-color: var(--mini-gray);
 }
