@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/favicon-152.svg" type="image/svg+xml">
@@ -144,12 +144,12 @@
           </li>
           <li class="sort-item">
             <div class="arrow-group">
-              <a class="arrow" href="#">
+              <a class="arrow arrow-down" href="#">
                 <svg class="icon-arrow icon-down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#231F20"/>
                 </svg>
               </a> <!---Под стрклочки---->
-              <a class="arrow" href="#">
+              <a class="arrow arrow-up" href="#">
                 <svg class="icon-arrow icon-up" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
                 </svg>
@@ -228,7 +228,7 @@
         </ul>
         <ul class="pagination-list">
           <li class="pagination-list-item">
-            <a class="pagination-link">1</a>
+            <a class="pagination-link active-item">1</a>
           </li>
           <li class="pagination-list-item">
             <a class="pagination-link" href="#">2</a>
@@ -250,16 +250,17 @@
       <div class="footer-wrapper">
         <div class="footer-inner">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <!-- <div class="map-responsive">  Закомментил по просьбе Наставника
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="1162" height="434" frameborder="0"></iframe>
-          </div>   -->
+          <iframe 
+            class="footer-iframe"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor">
+          </iframe>
           <div class="container">
             <div class="footer-contacts">
               <p class="inner-text">NЁRDS DESIGN STUDIO</p>
               <p class="inner-subtext">наб. Реки Карповки, <br>
                 5 лит П, Санкт-Петербург</p>
               <a class="inner-phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
-              <a class="button" href="#">Напишите нам</a>
+              <a class="button contacts-button" href="#">Напишите нам</a>
             </div>
           </div>
         </div>
