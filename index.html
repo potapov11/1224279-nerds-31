@@ -161,13 +161,13 @@
             </a>
           </li>
           <li class="our-clients-item">
-            <img class="our-clients-list-img logo logo-borodinski" src="img/index-img/logo-borodinski2.png" width="209" height="90" alt="Логотип Borodinskiy">
+            <a href="#"><img class="our-clients-list-img logo logo-borodinski" src="img/index-img/logo-borodinski2.png" width="209" height="90" alt="Логотип Borodinskiy"></a>
           </li>
           <li class="our-clients-item">
-            <img class="our-clients-list-img logo-pink" src="img/index-img/logo-pink2.png" width="185" height="52" alt="Логотип Pink">
+            <a href="#"><img class="our-clients-list-img logo-pink" src="img/index-img/logo-pink2.png" width="185" height="52" alt="Логотип Pink"></a>
           </li>
           <li class="our-clients-item">
-            <img class="our-clients-list-img logo-mishka" src="img/index-img/logo-mishka2.png" width="173" height="84" alt="Логотип Mishka">
+            <a href="#"><img class="our-clients-list-img logo-mishka" src="img/index-img/logo-mishka2.png" width="173" height="84" alt="Логотип Mishka"></a>
           </li>
         </ul>
       </section>
@@ -176,15 +176,23 @@
     <!---Модальное окно--->
     <div class="container">
       <div class="modal-block">
-        <form class="modal-window">
-          <p class="modal-text">Напишите нам</p>
-          <button class="button-close" type="button" aria-label="Закрыть"></button>
-          <label class="modal modal-name" for="login-name">Ваше имя</label>
-          <input class="modal-input input-name" placeholder="Имя Фамилия" type="text" name="login" id="login-name">
-          <label class="modal modal-email" for="email">Ваш email</label>
-          <input class="modal-input input-email" placeholder="email@example.com " type="email" name="email" id="e-mail">
-          <label class="modal modal-textarea" for="text-area"> Текст письма</label>
-          <textarea class="form-textarea" placeholder="В свободной форме" name="form-text" id="text-area" cols="30" rows="6"></textarea>
+        <form class="modal-window" action="https://echo.htmlacademy.ru/" method="POST">
+          <h3 class="modal-text">Напишите нам</h3>
+          <button class="button-close" type="button" aria-label="Закрыть окно"></button>
+          <div class="formfield">
+            <div class="form-name">
+              <label class="modal modal-name" for="login-name">Ваше имя</label>
+              <input class="modal-input input-name" placeholder="Имя Фамилия" type="text" name="login" id="login-name">
+            </div>
+            <div class="form-email">
+              <label class="modal modal-email" for="email">Ваш email</label>
+              <input class="modal-input input-email" placeholder="email@example.com " type="email" name="email" id="e-mail">
+            </div>
+            <div class="form-text-area">
+              <label class="modal modal-textarea" for="text-area"> Текст письма</label>
+              <textarea class="form-textarea" placeholder="В свободной форме" name="form-text" id="text-area" cols="88" rows="6"></textarea>
+            </div>
+          </div>
           <button class="button button-submit" type="submit">Отправить</button>
         </form>
       </div>
@@ -217,17 +225,17 @@
           <div class="social-block container">
             <ul class="social-list">
               <li class="social-item">
-                <a class="social-list-link" href="https://vk.com/">
+                <a class="social-list-link" href="https://vk.com/" aria-label="В Контакте">
                   <img class="social-list-img social-img-vk" src="img/index-img/vk-logo.svg" width="26" height="15" alt="Вконтакте логотип">
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-list-link" href="https://www.facebook.com/">
+                <a class="social-list-link" href="https://www.facebook.com/" aria-label="Фейсбук">
                   <img class="social-list-img social-img-fb" src="img/index-img/fb-logo.svg" width="12" height="22" alt="Facebook логотип">
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-list-link" href="https://www.instagram.com/">
+                <a class="social-list-link" href="https://www.instagram.com/" aria-label="Инстаграмм">
                   <img class="social-list-img social-img-insta" src="img/index-img/inst-logo.svg" width="21" height="21" alt="Instagram логотип">
                 </a>
               </li>
