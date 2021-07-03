@@ -45,7 +45,7 @@
 
       <section class="form">
         <h2 class="visually-hidden" >Фильтр поиска</h2>
-        <form class="form" action="https://echo.htmlacademy.ru/" method="GET"">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="form-group range-form">
             <legend class="form-title" >Стоимость:</legend>
             <div class="range-area">
@@ -57,7 +57,7 @@
               <div class="range btn-range-max"></div>
             </div>
             <div class="price-controls">
-              <label class="label-price"> От
+              <label class="label-price label-for"> От
                 <input class="form-control" type="text" name="min-price" value="0">
               </label>
               <label class="label-price"> До
@@ -70,11 +70,11 @@
             <fieldset class="form-group">
               <legend class="form-title" >Сетка:</legend>
                 <ul class="radio-list">
-                  <li class="radio-item">
+                  <li class="radio-item radio-adaptiv">
                     <input class="radio-input visually-hidden" type="radio" name="layout" value="rubber" id="radio-adaptive" checked>
                     <label class="radio" for="radio-adaptive">Адаптивная</label>
                   </li>
-                  <li class="radio-item">
+                  <li class="radio-item radio-fixed">
                     <input class="radio-input visually-hidden" type="radio" name="layout" value="rubber" id="radio-fixed">
                     <label class="radio" for="radio-fixed">Фиксированная</label>
                   </li>
@@ -170,7 +170,7 @@
               <h3 class="products-subtitle products-text"><a>Макет Sedona</a></h3>
               <p class="products-subtext">Информационный сайт<br>
               для туристов</p>
-              <a class="button red-button" tabindex="0" arialabel="Добавить макет в корзину" href="#">9 990 <span>&#8381;</span></a>
+              <a class="button red-button" tabindex="0" aria-label="Добавить макет в корзину" href="#">9 990 <span>&#8381;</span></a>
             </div>
           </li>
           <li class="products-item" tabindex="0">
@@ -242,14 +242,14 @@
 
     <footer class="footer">
       <div class="footer-wrapper">
-        <div class="footer-inner">
+        <div class="footer-inner catalog-footer-inner">
           <h2 class="visually-hidden">Наши контакты</h2>
           <iframe
             class="footer-iframe"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor">
           </iframe>
           <div class="container">
-            <div class="footer-contacts">
+            <div class="footer-contacts catalog-footer-contacts">
               <p class="inner-text">NЁRDS DESIGN STUDIO</p>
               <p class="inner-subtext">наб. Реки Карповки, <br>
                 5 лит П, Санкт-Петербург</p>

@@ -156,7 +156,7 @@ a {
 }
 
 .catalog-nav-link.link-active {
-  padding-bottom: 13px;
+  padding-bottom: 19px;
   border-bottom: 2px solid var(--red);
 }
 
@@ -219,6 +219,7 @@ a {
 
 .nav-link-basket {
   display: inline-block;
+  vertical-align: top;
   margin-left: auto;
 }
 
@@ -294,7 +295,9 @@ a {
   margin-bottom: 23px;
 }
 
-
+.advantages-item-3 {
+  padding-bottom: 84px;
+}
 
 .slide {
   display: none;
@@ -323,6 +326,7 @@ a {
   background-color: var(--white);
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .slider-button::before {
@@ -580,6 +584,7 @@ a {
 
 .inner-phone-link {
   display: inline-block;
+  vertical-align: top;
   color:var(--text-gray);
   line-height: 18px;
   margin-bottom: 37px;
@@ -655,6 +660,7 @@ a {
   margin: 0 auto;
   box-shadow: 0px 20px 40px var(--black-04);
   padding: 53px 99px 85px 100px;
+  box-shadow: #283136s;
 }
 
 .modal-window .modal-text {
@@ -798,6 +804,16 @@ a {
 
 
 /*---Section Footer----*/
+.footer .catalog-footer-contacts {
+  padding-top: 45px;
+}
+.footer .catalog-footer-inner::before {
+  top: 15%;
+  left: 59%;
+}
+
+
+
 .footer-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -934,11 +950,12 @@ a {
 }
 
 .sort-item {
-  margin-right: 25px;
+  margin-right: 31px;
 }
 
 .arrow {
   display: inline-block;
+  vertical-align: top;
 }
 
 .arrow-up {
@@ -1009,6 +1026,7 @@ a {
 .form-group-wrapper label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   user-select: none;
 }
@@ -1081,6 +1099,13 @@ a {
   margin-bottom: 18px;
 }
 
+.radio-item.radio-fixed {
+  margin-bottom: 13px;
+}
+.radio-item.radio-adaptiv {
+  margin-bottom: 16px;
+}
+
 .radio-item:hover .radio::after,
 .radio-item:hover .radio::before {
   opacity: 1;
@@ -1130,7 +1155,7 @@ a {
   height: 6px;
   background-color: var(--range-btn-gray);
   padding: 0;
-  border: solid 7px var(--white);
+  border: solid 9px var(--white);
   border-radius: 50%;
   box-shadow: 0px 2px 1px var(--catalog-dark-shadow);
 }
@@ -1159,6 +1184,10 @@ a {
   border-radius: 3px;
 }
 
+.form-control.label-for {
+  padding-right: 13px;
+}
+
 /*--End Fieldset Range*/
 
 .form-button {
@@ -1170,8 +1199,8 @@ a {
 }
 
  .form-group:nth-child(2) {
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 29px;
  }
 
  .form-group:nth-child(3) {
@@ -1300,7 +1329,7 @@ a {
  }
 
 .catalog-header .header-nav {
-  margin-bottom: 87px;
+  margin-bottom: 67px;
 }
 
  .form {
@@ -1312,16 +1341,16 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 45px;
-  margin-bottom: 32px;
+  margin-bottom: 43px;
  }
 
  .products-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 44px;
-  grid-row-gap: 86px;
+  grid-row-gap: 70px;
   list-style: none;
-  margin-bottom: 72px;
+  margin-bottom: 63px;
  }
 
  .sort-list {
@@ -1358,7 +1387,7 @@ a {
  }
 
  .form-group:nth-child(2) .form-title {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
  }
 
  .form-group:nth-child(3) .form-title {
@@ -1373,7 +1402,7 @@ a {
 .pagination-link {
   display: block;
   height: 50px;
-  padding: 15px 20px;
+  padding: 15px 19px;
   cursor: pointer;
   border-radius: 3px;
   background-color: var(--mini-gray);
