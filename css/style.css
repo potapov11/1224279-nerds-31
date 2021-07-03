@@ -125,6 +125,10 @@ a {
   align-items: center;
 }
 
+.nav-list {
+  padding-top: 5xp;
+}
+
 .nav-link-basket {
   position: relative;
   text-transform: uppercase;
@@ -134,7 +138,7 @@ a {
   content: "";
   position: absolute;
   top: 8px;
-  left: -30px;
+  left: -40px;
   background-image: url("../img/index-img/header-cart.svg");
   background-repeat: no-repeat;
   width: 15px;
@@ -143,7 +147,7 @@ a {
 }
 
 .nav-item {
-  padding-top: 13px;
+  padding-top: 1px;
   margin-right: 46px;
 }
 
@@ -256,7 +260,7 @@ a {
 }
 
 .advantages-item {
-  padding-top: 78px;
+  padding-top: 67px;
   padding-bottom: 80px;
 }
 
@@ -274,6 +278,24 @@ a {
   background-repeat: no-repeat;
 }
 
+.advantages-item-2 .advantages-text {
+  margin-bottom: 38px;
+}
+
+.advantages-item-2 .advantages-subtext {
+  margin-bottom: 23px;
+}
+
+.advantages-item-3 .advantages-text {
+  margin-bottom: 38px;
+}
+
+.advantages-item-3 .advantages-subtext {
+  margin-bottom: 23px;
+}
+
+
+
 .slide {
   display: none;
 }
@@ -288,8 +310,9 @@ a {
 
 .slider-buttons {
   position: absolute;
-  bottom: 100px;
-  left: 550px;
+  bottom: 82px;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .slider-button {
@@ -324,7 +347,9 @@ a {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -342,6 +367,10 @@ a {
 .contacts-button:hover,
 .button-submit:hover {
   background-color: var(--medium-red);
+}
+
+.advantages-button {
+  padding: 16px 54px;
 }
 
 .advantages-button:active,
@@ -391,14 +420,16 @@ a {
 }
 
 .services-title {
-  margin: 15px 0px;
+  text-transform: uppercase;
+  margin: 16px 0px;
+  margin-bottom: 19px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 
 .services-text {
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 
@@ -408,40 +439,40 @@ a {
 .about-us {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
   padding-bottom: 73px;
 }
 
 .about-us-stats {
   text-align: right;
-  width: 445px;
 }
 
 .about-us-stats .about-us-text {
+  text-transform: uppercase;
   font-weight: 700;
+  padding-right: 15px;
 }
 
 .about-us-item {
   position: relative;
-  margin-left: 30px;
+  padding-left: 35px;
 }
 
 .about-us-item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .about-us-item::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -30px;
+  left: 0px;
   background-color: var(--red);
   width: 25px;
   height: 2px;
 }
 
 .about-us-title {
-  margin-top: 73px;
+  margin-top: 55px;
   margin-bottom: 32px;
   font-size: 45px;
   font-weight: 500;
@@ -449,26 +480,32 @@ a {
 }
 
 .about-us-subtext {
-  margin-bottom: 23px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 43px;
+  margin-bottom: 22px;
   font-weight: 700;
 }
 
 .about-us-stats-list {
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
 }
 
 .about-us-stats-item {
-  width: 135px;
-}
-
-.about-us-stats-item span {
-  text-align: right;
+  padding-top: 30px;
+  width: 120px;
 }
 
 .about-us-text-bold {
   font-weight: 700;
   text-align: center;
+}
+
+.about-us-logo-img {
+  padding-top: 20px;
+  padding-bottom: 31px;
 }
 
 /*-----Section Our clients-----*/
@@ -491,6 +528,10 @@ a {
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
+}
+
+.list-right-number sup {
+  font-size: 26px;
 }
 
 .our-clients-item {
@@ -520,6 +561,12 @@ a {
   line-height: 18px;
 }
 
+.list-right-text {
+  display: inline-flex;
+  text-align: left;
+  padding-top: 12px;
+}
+
 .inner-text {
   font-size: 18px;
   font-weight: 700;
@@ -528,7 +575,7 @@ a {
 }
 
 .inner-subtext {
-  margin-bottom: 10px;
+  margin-bottom: 19px;
 }
 
 .inner-phone-link {
@@ -559,6 +606,21 @@ a {
   opacity: 0.1;
 }
 
+.client-academy {
+  padding-right: 25px;
+}
+
+.client-borodinsky {
+  padding-right: 11px;
+}
+
+.client-pink {
+  padding-left: 12px;
+}
+
+.client-mishka {
+  padding-left: 31px;
+}
 
 /*Modal-window*/
 
@@ -570,8 +632,8 @@ a {
 .formfield {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 36px;
-  grid-column-gap: 43px;
+  grid-row-gap: 29px;
+  grid-column-gap: 39px;
 }
 
 .form-text-area {
@@ -583,7 +645,7 @@ a {
   display: none;
   /* display: block; */
   position: fixed;
-  top: 50%;
+  top: 59%;
   transform: translate(-50%, -50%);
   left: 50%;
   bottom: auto;
@@ -592,7 +654,7 @@ a {
   width: 960px;
   margin: 0 auto;
   box-shadow: 0px 20px 40px var(--black-04);
-  padding: 63px 99px 85px 100px;
+  padding: 53px 99px 85px 100px;
 }
 
 .modal-window .modal-text {
@@ -601,7 +663,7 @@ a {
   line-height: 53px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 37px;
 }
 
 .modal {
@@ -614,8 +676,8 @@ a {
 
 .button-close {
   position: absolute;
-  right: 95px;
-  top: 84px;
+  right: 88px;
+  top: 79px;
   width:30px;
   height: 30px;
   padding: 0;
@@ -745,7 +807,10 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 320px;
   background-color: var(--white);
   z-index: 3;
@@ -762,8 +827,8 @@ a {
 .footer-inner::before {
   content: "";
   position: absolute;
-  top: 62px;
-  left: 775px;
+  top: 13%;
+  left: 59%;
   background-image: url("../img/index-img/map-logo-nerds.png");
   width: 235px;
   z-index: 1;
@@ -786,7 +851,7 @@ a {
 .social-block {
   display: flex;
   margin: 0 auto;
-  padding-top: 68px;
+  padding-top: 60px;
   padding-bottom: 63px;
   align-items: center;
 }
