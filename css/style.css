@@ -126,7 +126,7 @@ a {
 }
 
 .nav-list {
-  padding-top: 5xp;
+  padding-top: 5px;
 }
 
 .nav-link-basket {
@@ -332,17 +332,22 @@ a {
 .slider-button::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 6px;
-  height: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
   background-color: var(--white);
   border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.current.slider-button::before {
   border: 2px solid var(--mini-gray);
 }
 
 .slider-button:not(:last-child) {
-  margin-right: 17px;
+  margin-right: 13px;
 }
 /*--------------------Slider------*/
 
@@ -412,15 +417,16 @@ a {
 /*---- section SERVICES----*/
 
 .services {
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   padding-top: 80px;
-  border-bottom: 2px solid var(--mini-gray);
 }
 
 .services-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  padding-bottom: 81px;
+  border-bottom: 2px solid var(--mini-gray);
 }
 
 .services-title {
@@ -515,17 +521,18 @@ a {
 /*-----Section Our clients-----*/
 
 .our-clients {
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 
 .our-clients-list {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: 279px 300px 300px 308px;
   border-top: 2px solid var(--mini-gray);
   row-gap:25px;
   border-bottom: 2px solid var(--mini-gray);
-  padding: 46px 0;
+  padding-top: 46px;
+  padding-bottom: 38px;
 }
 
 .list-right-number {
@@ -612,19 +619,7 @@ a {
 }
 
 .client-academy {
-  padding-right: 25px;
-}
-
-.client-borodinsky {
-  padding-right: 11px;
-}
-
-.client-pink {
-  padding-left: 12px;
-}
-
-.client-mishka {
-  padding-left: 31px;
+  padding-right: 10px;
 }
 
 /*Modal-window*/
@@ -812,7 +807,9 @@ a {
   left: 59%;
 }
 
-
+.footer-contacts.main-page-footer-contacts {
+  padding-top: 58px;
+}
 
 .footer-wrapper {
   width: 100%;
@@ -825,8 +822,8 @@ a {
   flex-direction: column;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 47px;
+  padding-bottom: 52px;
   width: 320px;
   background-color: var(--white);
   z-index: 3;
@@ -843,7 +840,7 @@ a {
 .footer-inner::before {
   content: "";
   position: absolute;
-  top: 13%;
+  top: 15%;
   left: 59%;
   background-image: url("../img/index-img/map-logo-nerds.png");
   width: 235px;
@@ -851,6 +848,10 @@ a {
   height: 200px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.main-page-footer-wrapper .footer-inner::before {
+  top: 17%;
 }
 
 .footer-inner iframe{
@@ -867,7 +868,7 @@ a {
 .social-block {
   display: flex;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 64px;
   padding-bottom: 63px;
   align-items: center;
 }
@@ -950,7 +951,7 @@ a {
 }
 
 .sort-item {
-  margin-right: 31px;
+  margin-right: 25px;
 }
 
 .arrow {
@@ -964,6 +965,10 @@ a {
 
 .sort-item:last-child {
   margin-right: 0px;
+}
+
+.arrow-group {
+  margin-left: auto;
 }
 
 .input-text {
@@ -1254,7 +1259,8 @@ a {
   text-align: center;
   border-radius: 3px;
   background-color: var(--mini-gray);
-  padding: 26px 44px;
+  padding-bottom: 40px;
+  padding-top: 26px;
 }
 
 
@@ -1320,12 +1326,12 @@ a {
   grid-template-columns: min-content 1fr;
   grid-column-gap: 140px;
   grid-template-rows: min-content 1fr;
-  padding-top: 66px;
+  padding-top: 56px;
   padding-bottom: 60px;
  }
 
  .catalog-header {
-  padding-bottom: 97px;
+  padding-bottom: 107px;
  }
 
 .catalog-header .header-nav {
