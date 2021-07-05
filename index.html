@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/favicon-152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/favicon-180.png">
@@ -52,7 +51,7 @@
                 <li class="advantages-item advantages-item-1 slide slide-current">
                   <div class="advantages-item-inner">
                     <p class="advantages-text">Долго, дорого,<br> скрупулезно.</p>
-                    <p class="advantages-subtext">Математически выверенный дизайн для вашего<br> сайта или мобильного приложения.</p>
+                    <p class="advantages-subtext">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                     <a class="button advantages-button" href="#">Узнать больше</a>
                   </div>
                 </li>
@@ -61,20 +60,20 @@
                   <div class="advantages-item-inner">
                     <p class="advantages-text">Любим математику<br> как никто другой.</p>
                     <p class="advantages-subtext">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-                    <a class="button" href="#">Узнать больше</a>
+                    <a class="button advantages-button" href="#">Узнать больше</a>
                   </div>
                 </li>
 
                 <li class="advantages-item advantages-item-3 slide">
-                  <div class="advantages-item-inner"> 
+                  <div class="advantages-item-inner">
                     <p class="advantages-text">Только ночь,<br>только хардкор</p>
                     <p class="advantages-subtext">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-                    <a class="button" href="#">Узнать больше</a>
+                    <a class="button advantages-button" href="#">Узнать больше</a>
                   </div>
                 </li>
               </ul>
               <div class="slider-buttons">   <!---Управление слайдером--->
-                <button class="slider-button current" type="button"></button>
+                <button class="current slider-button" type="button"></button>
                 <button class="slider-button" type="button"></button>
                 <button class="slider-button" type="button"></button>
               </div>
@@ -130,20 +129,20 @@
           </ul>
         </div>
 
-        <div class="about-us-stats container">
+        <div class="about-us-stats">
           <img class="about-us-logo-img" src="img/index-img/nerds-logo-content.png" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
           <p class="about-us-text">с 2004 года Любим точность во всем:</p>
           <ul class="about-us-stats-list">
             <li class="about-us-stats-item">
-              <span class="list-right-number">146%</span>
+              <span class="list-right-number">146<sup>%</sup></span>
               <span class="list-right-text">Уровень<br> самоотдачи</span>
             </li>
             <li class="about-us-stats-item">
-              <span class="list-right-number">100%</span>
+              <span class="list-right-number">100<sup>%</sup></span>
               <span class="list-right-text">Соблюдение<br> сроков</span>
             </li>
             <li class="about-us-stats-item">
-              <span class="list-right-number">50%</span>
+              <span class="list-right-number">50<sup>%</sup></span>
               <span class="list-right-text">Минимальная<br> предоплата</span>
             </li>
           </ul>
@@ -155,18 +154,18 @@
       <section class="our-clients container">
         <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="our-clients-list">
-          <li class="our-clients-item">
+          <li class="our-clients-item client-academy">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img class="our-clients-list-img logo-academy" src="img/index-img/logo_htmlacademy2.svg" width="199" height="57" alt="Логотип htmlacademy">
             </a>
           </li>
-          <li class="our-clients-item">
+          <li class="our-clients-item client-borodinsky">
             <a href="#"><img class="our-clients-list-img logo logo-borodinski" src="img/index-img/logo-borodinski2.png" width="209" height="90" alt="Логотип Borodinskiy"></a>
           </li>
-          <li class="our-clients-item">
+          <li class="our-clients-item client-pink">
             <a href="#"><img class="our-clients-list-img logo-pink" src="img/index-img/logo-pink2.png" width="185" height="52" alt="Логотип Pink"></a>
           </li>
-          <li class="our-clients-item">
+          <li class="our-clients-item client-mishka">
             <a href="#"><img class="our-clients-list-img logo-mishka" src="img/index-img/logo-mishka2.png" width="173" height="84" alt="Логотип Mishka"></a>
           </li>
         </ul>
@@ -185,12 +184,12 @@
               <input class="modal-input input-name" placeholder="Имя Фамилия" type="text" name="login" id="login-name">
             </div>
             <div class="form-email">
-              <label class="modal modal-email" for="email">Ваш email</label>
+              <label class="modal modal-email" for="e-mail">Ваш email</label>
               <input class="modal-input input-email" placeholder="email@example.com " type="email" name="email" id="e-mail">
             </div>
             <div class="form-text-area">
               <label class="modal modal-textarea" for="text-area"> Текст письма</label>
-              <textarea class="form-textarea" placeholder="В свободной форме" name="form-text" id="text-area" cols="88" rows="6"></textarea>
+              <textarea class="form-textarea" placeholder="В свободной форме" name="form-text" id="text-area" cols="88" rows="4"></textarea>
             </div>
           </div>
           <button class="button button-submit" type="submit">Отправить</button>
@@ -205,15 +204,15 @@
     <!---Footer--->
 
     <footer class="footer">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper main-page-footer-wrapper">
         <div class="footer-inner">
           <h2 class="visually-hidden">Наши контакты</h2>
-            <iframe 
+            <iframe
               class="footer-iframe"
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor">
             </iframe>
           <div class="container">
-            <div class="footer-contacts">
+            <div class="footer-contacts main-page-footer-contacts">
               <p class="inner-text">NЁRDS DESIGN STUDIO</p>
               <p class="inner-subtext">наб. Реки Карповки, <br>
                 5 лит П, Санкт-Петербург</p>
@@ -247,5 +246,6 @@
           </div>
       </div>
     </footer>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
