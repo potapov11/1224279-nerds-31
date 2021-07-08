@@ -600,6 +600,7 @@ a {
 
 .social-subtext {
   line-height: 22px;
+  color: var(--modal-gray)
 }
 
 .our-clients-list-img {
@@ -846,7 +847,7 @@ a {
 }
 .footer .catalog-footer-inner::before {
   top: 15%;
-  left: 59%;
+  left: 64%;
 }
 
 .footer-contacts.main-page-footer-contacts {
@@ -873,7 +874,9 @@ a {
 
 .footer-inner {
   padding: 54px 0px 54px;
-  background-color: var(--footer-color);
+  background-image: url("../img/index-img/map-static.png");
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   min-height: 416px;
 }
@@ -883,7 +886,7 @@ a {
   content: "";
   position: absolute;
   top: 15%;
-  left: 59%;
+  left: 64%;
   background-image: url("../img/index-img/map-logo-nerds.png");
   width: 235px;
   z-index: 1;
