@@ -877,6 +877,7 @@ a {
   background-image: url("../img/index-img/map-static.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   position: relative;
   min-height: 416px;
 }
